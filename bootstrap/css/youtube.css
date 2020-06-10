@@ -1,0 +1,43 @@
+body, ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+ul {
+	display: none;
+}
+
+ul li{
+	list-style: none;
+	display: block;
+	padding: 10px;
+}
+
+ul li:hover {
+		background: #e91e63;
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.toggle {
+	color: white;
+	font-size: 25px;
+	padding: 15px;
+}
+
+.navbar-vertical {
+  position: fixed;
+  top: 0;
+  background: #00316b;
+
+}
+
+.active {
+		display: block;
+		width: 240px;
+}
