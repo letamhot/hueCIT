@@ -23,8 +23,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Trần Thị Trang',
                 'BirthDay' => '1975-09-16',
                 'StartDay' => '2017-09-09',
-                'id_LoaiNS' => 1,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             1 => 
             array (
@@ -32,8 +32,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Nguyễn Đức Huy',
                 'BirthDay' => '1998-02-04',
                 'StartDay' => '2014-07-04',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 3,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             2 => 
             array (
@@ -41,8 +41,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Huỳnh Tâm',
                 'BirthDay' => '1998-02-04',
                 'StartDay' => '2015-07-04',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 9,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             3 => 
             array (
@@ -50,8 +50,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Dung Thị Tố Nga',
                 'BirthDay' => '1998-02-04',
                 'StartDay' => '2016-07-04',
-                'id_LoaiNS' => 4,
-                'id_csyt' => 15,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             4 => 
             array (
@@ -59,8 +59,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Hoa Kim Dung',
                 'BirthDay' => '1998-02-04',
                 'StartDay' => '2017-07-04',
-                'id_LoaiNS' => 1,
-                'id_csyt' => 4,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             5 => 
             array (
@@ -68,8 +68,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Nhan Ngọc Tài',
                 'BirthDay' => '1998-02-04',
                 'StartDay' => '2018-07-04',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 3,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             6 => 
             array (
@@ -77,8 +77,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Nguyễn Thanh',
                 'BirthDay' => '2009-04-03',
                 'StartDay' => '2018-03-04',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             7 => 
             array (
@@ -86,8 +86,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Trần Thùy Thu',
                 'BirthDay' => '2000-02-02',
                 'StartDay' => '2016-04-05',
-                'id_LoaiNS' => 4,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             8 => 
             array (
@@ -95,8 +95,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Lý Thị Hồng Hà',
                 'BirthDay' => '2000-02-02',
                 'StartDay' => '2014-07-17',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 18,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             9 => 
             array (
@@ -104,8 +104,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Mã Như Huệ',
                 'BirthDay' => '2000-02-02',
                 'StartDay' => '2017-05-19',
-                'id_LoaiNS' => 1,
-                'id_csyt' => 18,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             10 => 
             array (
@@ -113,8 +113,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Huỳnh Kim Cúc',
                 'BirthDay' => '2000-02-02',
                 'StartDay' => '2015-07-29',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 3,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             11 => 
             array (
@@ -122,8 +122,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Chế Thị Xin ',
                 'BirthDay' => '2000-02-02',
                 'StartDay' => '2018-04-17',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             12 => 
             array (
@@ -131,8 +131,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Trần Kim Chinh',
                 'BirthDay' => '2000-01-01',
                 'StartDay' => '2016-05-04',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             13 => 
             array (
@@ -140,8 +140,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Lê Văn Hoàng',
                 'BirthDay' => '1996-08-16',
                 'StartDay' => '2016-06-03',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 12,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             14 => 
             array (
@@ -149,8 +149,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Nguyễn Văn Cù',
                 'BirthDay' => '1975-12-11',
                 'StartDay' => '2010-12-11',
-                'id_LoaiNS' => 4,
-                'id_csyt' => 5,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             15 => 
             array (
@@ -158,8 +158,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Lê Na',
                 'BirthDay' => '1976-10-16',
                 'StartDay' => '2016-12-18',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 5,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             16 => 
             array (
@@ -167,8 +167,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Khánh Linh',
                 'BirthDay' => '1983-09-17',
                 'StartDay' => '2015-09-23',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 12,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             17 => 
             array (
@@ -176,8 +176,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Lê Kim',
                 'BirthDay' => '1976-10-16',
                 'StartDay' => '2016-12-18',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 4,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             18 => 
             array (
@@ -185,8 +185,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Trần Hoàng',
                 'BirthDay' => '1983-09-17',
                 'StartDay' => '2015-09-23',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 1,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             19 => 
             array (
@@ -194,8 +194,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Văn Hoàng',
                 'BirthDay' => '1976-10-16',
                 'StartDay' => '2016-12-18',
-                'id_LoaiNS' => 4,
-                'id_csyt' => 1,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             20 => 
             array (
@@ -203,8 +203,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Lê Thủy',
                 'BirthDay' => '1983-09-17',
                 'StartDay' => '2015-09-23',
-                'id_LoaiNS' => 1,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             21 => 
             array (
@@ -212,8 +212,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Lê Mão',
                 'BirthDay' => '1976-10-16',
                 'StartDay' => '2016-12-18',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 10,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             22 => 
             array (
@@ -221,8 +221,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Hoàng Thùy',
                 'BirthDay' => '1983-09-17',
                 'StartDay' => '2015-09-23',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 10,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             23 => 
             array (
@@ -230,8 +230,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Hoàng Tấm',
                 'BirthDay' => '1976-10-16',
                 'StartDay' => '2016-12-18',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 11,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             24 => 
             array (
@@ -239,8 +239,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Nguyễn Nga',
                 'BirthDay' => '1983-09-17',
                 'StartDay' => '2015-09-23',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 11,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             25 => 
             array (
@@ -248,8 +248,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Lê Na',
                 'BirthDay' => '1976-10-16',
                 'StartDay' => '2016-12-18',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             26 => 
             array (
@@ -257,8 +257,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Lê Thủy',
                 'BirthDay' => '1983-09-17',
                 'StartDay' => '2015-09-23',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             27 => 
             array (
@@ -266,8 +266,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'LÊ VĂN TÁM',
                 'BirthDay' => '1996-08-16',
                 'StartDay' => '2016-01-02',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             28 => 
             array (
@@ -275,8 +275,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Vũ Trọng Hùng',
                 'BirthDay' => '1983-12-17',
                 'StartDay' => '2017-07-08',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             29 => 
             array (
@@ -284,8 +284,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Huỳnh Văn Phú',
                 'BirthDay' => '1975-09-17',
                 'StartDay' => '2015-06-10',
-                'id_LoaiNS' => 1,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             30 => 
             array (
@@ -293,8 +293,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Vũ Trọng Hùng',
                 'BirthDay' => '1983-12-17',
                 'StartDay' => '2017-07-08',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             31 => 
             array (
@@ -302,8 +302,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Huỳnh Văn Phú',
                 'BirthDay' => '1975-09-17',
                 'StartDay' => '2015-06-10',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             32 => 
             array (
@@ -311,8 +311,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Nguyễn Hoàng Tài',
                 'BirthDay' => '1983-12-17',
                 'StartDay' => '2017-07-08',
-                'id_LoaiNS' => 1,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             33 => 
             array (
@@ -320,8 +320,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Trần Phi Hùng',
                 'BirthDay' => '1975-09-17',
                 'StartDay' => '2015-06-10',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             34 => 
             array (
@@ -329,8 +329,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Văn Tiến Hải',
                 'BirthDay' => '1983-12-17',
                 'StartDay' => '2017-07-08',
-                'id_LoaiNS' => 3,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             35 => 
             array (
@@ -338,8 +338,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Huỳnh Văn Phú',
                 'BirthDay' => '1975-09-17',
                 'StartDay' => '2015-06-10',
-                'id_LoaiNS' => 1,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             36 => 
             array (
@@ -347,8 +347,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Lê Thị Thủy',
                 'BirthDay' => '1983-12-17',
                 'StartDay' => '2017-07-08',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
             37 => 
             array (
@@ -356,8 +356,8 @@ class NhansuTableSeeder extends Seeder
                 'name' => 'Võ Văn Nguyên',
                 'BirthDay' => '1975-09-17',
                 'StartDay' => '2015-06-10',
-                'id_LoaiNS' => 2,
-                'id_csyt' => 2,
+                'id_LoaiNS' => null,
+                'id_csyt' => null,
             ),
         ));
         
