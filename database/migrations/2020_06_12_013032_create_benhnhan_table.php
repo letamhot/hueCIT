@@ -12,8 +12,7 @@ class CreateBenhnhanTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('benhnhan', function(Blueprint $table)
-		{
+		Schema::create('benhnhan', function(Blueprint $table){
 			$table->integer('id', true);
 			$table->text('hoten', 65535);
 			$table->text('diachi', 65535);
@@ -21,7 +20,7 @@ class CreateBenhnhanTable extends Migration {
 			$table->date('BirthDay');
 			$table->date('StartDay');
 			$table->text('tenbenh', 65535);
-			$table->integer('id_giuong')->index('id_giuong');
+			$table->integer('id_giuong')->index('id_giuong')->nullable();
 			$table->integer('id_csyt')->index('par_ind');
 		});
 	}

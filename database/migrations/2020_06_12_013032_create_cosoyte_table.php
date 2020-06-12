@@ -15,10 +15,10 @@ class CreateCosoyteTable extends Migration {
 		Schema::create('cosoyte', function(Blueprint $table)
 		{
 			$table->integer('id_csyt', true);
-			$table->text('name', 65535);
-			$table->text('diachi', 65535);
+			$table->text('name');
+			$table->text('diachi');
 			$table->string('sdt');
-			$table->text('loaiCS', 65535);
+			$table->text('loaiCS');
 			$table->date('NgayTL');
 		});
 	}
