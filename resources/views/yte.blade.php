@@ -4,20 +4,20 @@
 <head>
     <title>Y Tế</title>
     <meta charset="utf-8">
-    <link rel="icon" href="{{ URL::asset('img/b1.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/b1.png') }}" type="image/x-icon">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
-    <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('js/highcharts.js') }}">
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/highcharts.js') }}">
 
-    <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="{{ URL::asset('js/jquery-3.4.1-jquery.min.js') }}"></script>
-    <script src="{{ URL::asset('js/popper.min.js') }}"></script>
-    <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.4.1-jquery.min.js') }}"></script>
+    <script src="{{ asset('js/popper.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <!--   <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
 
     <style>
@@ -248,7 +248,7 @@
         <nav class="navbar btn bg navbar-style">
             <div class="text-left" style="width: 100%; display: flex; justify-content: space-between; ">
                 <div>
-                    <img src="{{ URL::asset('img/b1.png') }}" style="width: 50px; height: 50px" alt="home" />
+                    <img src="{{ asset('img/b1.png') }}" style="width: 50px; height: 50px" alt="home" />
 
                 </div>
                 <form class="form-inline" style="position: relative;">
@@ -265,7 +265,7 @@
 
     <br>
 
-    <script src="{{ URL::asset('js/jquery-3.4.1.js') }}">
+    <script src="{{ asset('js/jquery-3.4.1.js') }}">
 
     </script>
     <script type="text/javascript">
@@ -287,15 +287,15 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" style="height: 500px;" src="{{ URL::asset('img/a3.jpg') }}"
+                <img class="d-block w-100" style="height: 500px;" src="{{ asset('img/a3.jpg') }}"
                     alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" style="height: 500px;" src="{{ URL::asset('img/a7.jpg') }}"
+                <img class="d-block w-100" style="height: 500px;" src="{{ asset('img/a7.jpg') }}"
                     alt="Third slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" style="height: 500px;" src="{{ URL::asset('img/a2.jpg') }}"
+                <img class="d-block w-100" style="height: 500px;" src="{{ asset('img/a2.jpg') }}"
                     alt="Third slide">
             </div>
         </div>
@@ -313,7 +313,7 @@
         <div class="tam" style="display: flex; flex-wrap: wrap;">
             <div class="tam-item">
                 <div>
-                    <img src="{{ URL::asset('img/a3.jpg') }}" />
+                    <img src="{{ asset('img/a3.jpg') }}" />
                 </div>
                 <div>
                     <h4>Bệnh Viện</h4>
@@ -321,7 +321,7 @@
             </div>
             <div class="tam-item">
                 <div>
-                    <img src="{{ URL::asset('img/a1.jpg') }}" />
+                    <img src="{{ asset('img/a1.jpg') }}" />
 
                 </div>
                 <div>
@@ -330,7 +330,7 @@
             </div>
             <div class="tam-item">
                 <div>
-                    <img src="{{ URL::asset('img/a2.jpg') }}" />
+                    <img src="{{ asset('img/a2.jpg') }}" />
                 </div>
                 <div>
                     <h4>Đội Ngũ Y Bác Sĩ</h4>
@@ -345,26 +345,26 @@
     </div>
     <div class="row-items">
         <div class="item">
-            <img src="{{ URL::asset('img/c4.jpg') }}">
+            <img src="{{ asset('img/c4.jpg') }}">
             <h5>Khám Chữa Bệnh Và Cấp Cứu</h5>
         </div>
         <div class="item">
-            <div class="service-item text-center style-3"><img src="{{ URL::asset('img/c5.jpg') }}">
+            <div class="service-item text-center style-3"><img src="{{ asset('img/c5.jpg') }}">
                 <h5>Nghiên Cứu Khoa Học</h5>
             </div>
         </div>
         <div class="item">
-            <div class="service-item text-center style-3"><img src="{{ URL::asset('img/c3.jpg') }}">
+            <div class="service-item text-center style-3"><img src="{{ asset('img/c3.jpg') }}">
                 <h5>Đào Tạo<br></h5>
             </div>
         </div>
         <div class="item">
-            <div class="service-item text-center style-3"><img src="{{ URL::asset('img/c2.jpg') }}">
+            <div class="service-item text-center style-3"><img src="{{ asset('img/c2.jpg') }}">
                 <h5>Hợp Tác Quốc Tế<br></h5>
             </div>
         </div>
         <div class="item">
-            <div class="service-item text-center style-3"><img src="{{ URL::asset('img/c1.jpg') }}">
+            <div class="service-item text-center style-3"><img src="{{ asset('img/c1.jpg') }}">
                 <h5>Chăm Sóc Sức Khỏe Cộng Đồng</h5>
             </div>
         </div>
@@ -375,10 +375,10 @@
         <h4>Chỉ Tiêu Về Y Tế</h4>
     </b>
     <hr>
-    <script src="{{ URL::asset('js/highcharts.js') }}"></script>
-    <script src="{{ URL::asset('js/export-data.js') }}"></script>
-    <script src="{{ URL::asset('js/exporting.js') }}"></script>
-    <script src="{{ URL::asset('js/accessibility.js') }}"></script>
+    <script src="{{ asset('js/highcharts.js') }}"></script>
+    <script src="{{ asset('js/export-data.js') }}"></script>
+    <script src="{{ asset('js/exporting.js') }}"></script>
+    <script src="{{ asset('js/accessibility.js') }}"></script>
     <div class="panel">
         <div class="highcharts">
             <div class="charts-item" id="charts">

@@ -3,22 +3,22 @@
 <head>
   <title>Cổng Thông Tin Thành Phố Huế</title>
   <link rel = "icon" href =
-"{{ URL::asset('img/b1.png') }}"
+"{{ asset('img/b1.png') }}"
         type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <!-- <link rel="stylesheet" type="text/css" href="youtube.css"> -->
-    <!-- <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}"> -->
-    <link rel="stylesheet" href="{{ URL::asset('js/highcharts.js') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('css/index.css') }}"> -->
+    <link rel="stylesheet" href="{{ asset('js/highcharts.js') }}">
 
-  <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="{{ URL::asset('js/jquery-3.4.1-jquery.min.js') }}"></script>
-  <script src="{{ URL::asset('js/popper.min.js') }}"></script>
-  <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/jquery-3.4.1-jquery.min.js') }}"></script>
+  <script src="{{ asset('js/popper.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <!--   <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
 
   <style>
@@ -366,7 +366,7 @@ footer {
 <nav class="navbar btn bg navbar-style">
   <div class="text-left" style="width: 100%; display: flex; justify-content: space-between; ">
   <div>
-  <a href="{{url('master')}}"><img src="{{ URL::asset('img/b1.png') }}" style="width: 50px; height: 50px" alt="home" /></a>
+  <a href="{{url('master')}}"><img src="{{ asset('img/b1.png') }}" style="width: 50px; height: 50px" alt="home" /></a>
 
 </div>
 <form class="form-inline" style="position: relative;">
@@ -384,7 +384,7 @@ footer {
   <br>
 
     <script
-  src="{{ URL::asset('js/jquery-3.4.1.js') }}">
+  src="{{ asset('js/jquery-3.4.1.js') }}">
 
 </script>
 <script type="text/javascript">
@@ -406,13 +406,13 @@ footer {
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" style="height: 500px; object-fit: cover;" src="{{ URL::asset('img/a3.jpg') }}" alt="First slide">
+      <img class="d-block w-100" style="height: 500px; object-fit: cover;" src="{{ asset('img/a3.jpg') }}" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" style="height: 500px; object-fit: cover;" src="{{ URL::asset('img/a7.jpg') }}" alt="Third slide">
+      <img class="d-block w-100" style="height: 500px; object-fit: cover;" src="{{ asset('img/a7.jpg') }}" alt="Third slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" style="height: 500px; object-fit: cover;" src="{{ URL::asset('img/a4.jpg') }}" alt="Third slide">
+      <img class="d-block w-100" style="height: 500px; object-fit: cover;" src="{{ asset('img/a4.jpg') }}" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -429,7 +429,7 @@ footer {
   <div class="tam" style="display: flex; flex-wrap: wrap;">
   <div class="tam-item">
     <div>
-      <img src="{{ URL::asset('img/a3.jpg') }}" />
+      <img src="{{ asset('img/a3.jpg') }}" />
     </div>
     <div>
       <h4 >Bệnh Viện</h4>
@@ -437,7 +437,7 @@ footer {
   </div>
   <div class="tam-item">
        <div>
-        <img src="{{ URL::asset('img/a1.jpg') }}" />
+        <img src="{{ asset('img/a1.jpg') }}" />
 
     </div>
     <div>
@@ -446,7 +446,7 @@ footer {
   </div>
   <div class="tam-item">
        <div>
-      <img src="{{ URL::asset('img/a2.jpg') }}" />
+      <img src="{{ asset('img/a2.jpg') }}" />
     </div>
     <div>
       <h4 >Đội Ngũ Y Bác Sĩ</h4>
@@ -470,7 +470,7 @@ footer {
       <div class="row">
         <div class="row5-2">
           <div class="service-item text-center style-3">
-            <img src="{{ URL::asset('img/d10.jpg') }}">
+            <img src="{{ asset('img/d10.jpg') }}">
             <h4>Đột quỵ</h4>
             <div class="border-center"></div>
             <p>Cứu sống nhiều  trường hợp tai biến mạch máu não, nhồi máu cơ tim  được can thiệp nhanh chóng, kịp khoảng “thời gian vàng”.</p>
@@ -478,7 +478,7 @@ footer {
         </div>
         <div class="row5-2">
           <div class="service-item text-center style-3">
-            <img src="{{ URL::asset('img/d9.jpg') }}"><h4>Ghép tạng</h4>
+            <img src="{{ asset('img/d9.jpg') }}"><h4>Ghép tạng</h4>
             <div class="border-center"></div>
             <p>Đạt được những thành tựu to lớn trong lĩnh vực ghép tạng: ghép tim, ghép thận, ghép tế bào gốc tạo máu tự thân, ghép giác mạc...</p>
           </div>
@@ -486,7 +486,7 @@ footer {
         <div class="row5-2">
           <div class="service-item text-center style-3">
 
-              <img src="{{ URL::asset('img/d8.jpg') }}">
+              <img src="{{ asset('img/d8.jpg') }}">
 
             <h4>Ngoại khoa - Phẫu thuật nội soi</h4>
             <div class="border-center"></div>
@@ -495,7 +495,7 @@ footer {
         </div>
         <div class="row5-2">
           <div class="service-item text-center style-3">
-            <img src="{{ URL::asset('img/d7.jpg') }}">
+            <img src="{{ asset('img/d7.jpg') }}">
             <h4>Vô sinh hiếm muộn - Nam học</h4>
             <div class="border-center"></div>
             <p>Hơn 1.000 em bé ra đời bằng phương pháp thụ tinh trong ống nghiệm, triển khai thành công mang thai hộ tại Việt Nam.</p>
@@ -503,7 +503,7 @@ footer {
         </div>
         <div class="row5-2">
           <div class="service-item text-center style-3">
-           <img src="{{ URL::asset('img/d6.jpg') }}"><h4>Điều trị Ung thư</h4>
+           <img src="{{ asset('img/d6.jpg') }}"><h4>Điều trị Ung thư</h4>
             <div class="border-center"></div>
             <p>Điều trị ung thư bằng các kỹ thuật xạ trị cao cấp lần đầu tiên tại Việt Nam, điều trị ung thư đa mô thức.</p>
           </div>
@@ -512,14 +512,14 @@ footer {
             <div class="row">
               <div class="row5-2">
               <div class="service-item text-center style-3">
-                  <img src="{{ URL::asset('img/d5.jpg') }}">
+                  <img src="{{ asset('img/d5.jpg') }}">
                   <h4>Tim mạch</h4>
                   <div class="border-center"></div>
                   <p>Cứu sống nhiều trường hợp tai biến mạch máu não, nhồi máu cơ tim được can thiệp nhanh chóng, kịp khoảng “thời gian vàng”.</p>
                 </div>
               </div>
               <div class="row5-2">
-                <div class="service-item text-center style-3"><img src="{{ URL::asset('img/d4.jpg') }}">
+                <div class="service-item text-center style-3"><img src="{{ asset('img/d4.jpg') }}">
                   <h4>Tạo hình thẩm mỹ</h4>
                     <div class="border-center"></div>
                     <p>Giải pháp tối ưu khắc phục hiệu quả các nhược điểm trên cơ thể, mang đến gương mặt hài hòa, vóc dáng chữ S cho những ai đang muốn cải thiện.</p>
@@ -527,7 +527,7 @@ footer {
                 </div>
                 <div class="row5-2">
                   <div class="service-item text-center style-3">
-                    <img src="{{ URL::asset('img/d3.jpg') }}">
+                    <img src="{{ asset('img/d3.jpg') }}">
                     <h4>Chăm sóc da – Thẩm mỹ</h4>
                     <div class="border-center"></div>
                     <p>Là địa chỉ tin cậy được nhiều khách hàng và người bệnh lựa chọn để làm đẹp, điều trị các bệnh lý về da</p>
@@ -535,7 +535,7 @@ footer {
                 </div>
                 <div class="row5-2">
                   <div class="service-item text-center style-3">
-                      <img src="{{ URL::asset('img/d2.jpg') }}">
+                      <img src="{{ asset('img/d2.jpg') }}">
                       <h4>Gây mê Hồi sức</h4>
                       <div class="border-center"></div>
                       <p>Triển khai hàng chục nghìn ca mổ mỗi năm, với đa số là các ca phẫu thuật đặc biệt và phẫu thuật có sử dụng kỹ thuật cao.</p>
@@ -543,7 +543,7 @@ footer {
                   </div>
                   <div class="row5-2">
                     <div class="service-item text-center style-3">
-                      <img src="{{ URL::asset('img/d1.jpg') }}">
+                      <img src="{{ asset('img/d1.jpg') }}">
                       <h4>Cận Lâm sàng</h4>
                       <div class="border-center"></div>
                       <p>Giúp cho việc khám bệnh, chẩn đoán, điều trị, theo dõi điều trị bệnh nhân được chính xác hơn.</p>
