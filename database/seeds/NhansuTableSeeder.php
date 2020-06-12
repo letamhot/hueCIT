@@ -106,6 +106,7 @@ class NhansuTableSeeder extends Seeder
                 'StartDay' => '2016-12-18',
                 'id_LoaiNS' => null,
                 'id_csyt' => 4,
+                
             ),
         ));
         

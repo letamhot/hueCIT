@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DB;
 use Session;
-class cosoyteController extends Controller
+class CosoyteController extends Controller
 {
     public function __construct()
     {

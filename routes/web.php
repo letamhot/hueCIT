@@ -61,8 +61,8 @@ Route::get('/login', array('uses' => 'Auth\LoginController@showLogin'));
 Route::post('signin', 'Auth\LoginController@doLogin');
 Route::get('logout', 'Auth\LoginController@logout');
 
-Route::get('dashboard', 'dashboardController@index'); 
-Route::get('yte', 'dashboardController@index1');
+Route::get('dashboard', 'DashboardController@index'); 
+Route::get('yte', 'DashboardController@index1');
 
 
 Route::get('/highchart/nhansu', 'ChartDataController@getNhanSu');
@@ -101,10 +101,10 @@ Route::get('csyt', function () {
     return view('layouts.CSYT');
 });
 
-Route::get('/cosoyte', 'cosoyteController@index')->name('cosoyte.index');
-Route::get('/cosoyte/details/{id}', 'cosoyteController@details')->name('cosoyte.details');
-Route::get('/cosoyte/add', 'cosoyteController@add')->name('cosoyte.add');
-Route::post('/cosoyte/insert', 'cosoyteController@insert')->name('cosoyte.insert');
-Route::get('/cosoyte/edit/{id}', 'cosoyteController@edit')->name('cosoyte.edit');
-Route::post('/cosoyte/update/{id}', 'cosoyteController@update')->name('cosoyte.update');
-Route::get('/cosoyte/delete/{id}', 'cosoyteController@delete')->name('cosoyte.delete');
+Route::get('/cosoyte', 'CosoyteController@index')->name('cosoyte.index');
+Route::get('/cosoyte/details/{id}', 'CosoyteController@details')->name('cosoyte.details');
+Route::get('/cosoyte/add', 'CosoyteController@add')->name('cosoyte.add');
+Route::post('/cosoyte/insert', 'CosoyteController@insert')->name('cosoyte.insert');
+Route::get('/cosoyte/edit/{id}', 'CosoyteController@edit')->name('cosoyte.edit');
+Route::post('/cosoyte/update/{id}', 'CosoyteController@update')->name('cosoyte.update');
+Route::get('/cosoyte/delete/{id}', 'CosoyteController@delete')->name('cosoyte.delete');
