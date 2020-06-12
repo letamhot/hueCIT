@@ -16,7 +16,7 @@
 
         <div class="form-group">
             <strong>Name:</strong>
-            {{ $nhansu->Name }}
+            {{ $nhansu->name }}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
@@ -34,13 +34,13 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>id_LoaiNS:</strong>
-            {{ $nhansu->id_LoaiNS }}
+            {{ $nhansu->loaiNS->name }}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Cơ sở y tế:</strong>
-            {{ $nhansu->id_csyt }}
+            {{ $nhansu->cosoyte->name }}
         </div>
     </div>
 </div>

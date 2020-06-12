@@ -19,7 +19,6 @@
   <script src="{{ asset('js/jquery-3.4.1-jquery.min.js') }}"></script>
   <script src="{{ asset('js/popper.min.js') }}"></script>
   <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-<!--   <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
 
   <style>
   .fakeimg {
@@ -30,7 +29,6 @@
   </style>
   <style>
   .dropdown {
-    /*width: 300px;*/
     flex: 1;
     text-align: center;
   }
@@ -40,10 +38,7 @@
   </style>
 <style>
 
-/*h3 {
-  color: yellow;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}*/
+
 
 </style>
 <style>
@@ -54,17 +49,7 @@ h6 {
 }
 
 </style>
-<!--   <style>
-h3 {
-  text-shadow: 1px 1px 2px white,0 0 6px blue, 0 0 6px yellow;
-}
-</style>
-  <style>
-h5 {
-  text-shadow: 1px 1px 2px powderblue,0 0 6px blue, 0 0 6px powderblue;
-}
 
-</style> -->
 
 <style type="text/css">
 

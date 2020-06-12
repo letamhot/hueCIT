@@ -15,7 +15,7 @@ class CreateNhansuTable extends Migration {
 		Schema::create('nhansu', function(Blueprint $table)
 		{
 			$table->integer('id', true);
-			$table->text('Name', 65535);
+			$table->text('name', 65535);
 			$table->date('BirthDay');
 			$table->date('StartDay');
 			$table->integer('id_LoaiNS')->index('foreignkey')->nullable();

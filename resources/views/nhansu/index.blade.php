@@ -40,10 +40,10 @@
                         @foreach($nhansu as $ns)
                         <tr>
                             <td>{{$ns->id}}</td>
-                            <td>{{$ns->Name}}</td>
+                            <td>{{$ns->name}}</td>
                             <td>{{$ns->BirthDay}}</td>
                             <td>{{$ns->StartDay}}</td>
-                            <td>{{$ns->loaiNS->Name}}</td>
+                            <td>{{$ns->loaiNS->name}}</td>
                             <td>{{$ns->cosoyte->name}}</td>
                             <td>
                                 <a href="{{ route('nhansu.details', $ns->id) }}" class="label label-success">Details</a>

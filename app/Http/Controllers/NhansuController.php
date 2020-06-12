@@ -44,7 +44,7 @@ class NhansuController extends Controller
     {
         //validate post data
         $this->validate($request, [
-            'Name' => 'required',
+            'name' => 'required',
             'BirthDay' => 'required',
             'StartDay' => 'required',
             'id_LoaiNS' => 'required',
@@ -52,7 +52,7 @@ class NhansuController extends Controller
         ]);
 
         $nhansu = new nhansu();
-        $nhansu->Name = $request->Name;
+        $nhansu->name = $request->name;
         $nhansu->BirthDay = $request->BirthDay;
         $nhansu->StartDay = $request->StartDay;
         $nhansu->id_LoaiNS = $request->id_LoaiNS;
@@ -77,13 +77,13 @@ class NhansuController extends Controller
     {
         //validate post data
         $this->validate($request, [
-            'Name' => 'required',
+            'name' => 'required',
             'BirthDay' => 'required',
             'StartDay' => 'required',
             'id_LoaiNS' => 'required',
         ]);
         $nhansu = nhansu::findOrfail($id);
-        $nhansu->Name = $request->Name;
+        $nhansu->name = $request->name;
         $nhansu->BirthDay = $request->BirthDay;
         $nhansu->StartDay = $request->StartDay;
         $nhansu->id_LoaiNS = $request->id_LoaiNS;
@@ -99,6 +99,6 @@ class NhansuController extends Controller
         $nhansu->delete();
 
         //store status message
-        return back()->with('success', "Nhansu $nhansu->Name delete!");
+        return back()->with('success', "Nhansu $nhansu->name delete!");
     }
 }

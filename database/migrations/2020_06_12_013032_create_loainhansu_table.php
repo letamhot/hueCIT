@@ -15,7 +15,7 @@ class CreateLoainhansuTable extends Migration {
 		Schema::create('loainhansu', function(Blueprint $table)
 		{
 			$table->integer('id', true);
-			$table->text('Name', 65535);
+			$table->text('name', 65535);
 		});
 	}
 

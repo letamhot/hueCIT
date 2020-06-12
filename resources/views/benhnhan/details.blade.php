@@ -54,13 +54,13 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>id_giuong:</strong>
-            {{ $benhnhan->id_giuong }}
+            {{ $benhnhan->giuongbenh->name }}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Cơ sở y tế:</strong>
-            {{ $benhnhan->id_csyt }}
+            {{ $benhnhan->cosoyte->name }}
         </div>
     </div>
 </div>

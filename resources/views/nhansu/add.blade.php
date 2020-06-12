@@ -38,13 +38,30 @@
                     <div class="form-group">
                         <label class="control-label col-sm-2" >id_LoaiNS</label>
                         <div class="col-sm-10">
-                            <input type="text" name="id_LoaiNS" id="id_LoaiNS" class="form-control">
+                            {{-- <input type="text" name="id_LoaiNS" id="id_LoaiNS" class="form-control">
+                             --}}
+                             <select class="form-control input-width" name="id_LoaiNS">
+                                @foreach ($loaiNs as $loains)
+                                <option value="{{ $loains->id }}" @if(old('id_LoaiNS')==$loains->id)
+                                    {{ "selected" }}
+                                    @endif
+                                    >{{ $loains->name }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" >Cơ sở y tế</label>
                         <div class="col-sm-10">
-                            <input type="text" name="id_csyt" id="id_csyt" class="form-control">
+                            {{-- <input type="text" name="id_csyt" id="id_csyt" class="form-control"> --}}
+                            <select class="form-control input-width" name="id_csyt">
+                                @foreach ($cosoyte as $csyt)
+                                <option value="{{ $csyt->id }}" @if(old('id_csyt')==$csyt->id)
+                                    {{ "selected" }}
+                                    @endif
+                                    >{{ $csyt->name }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">

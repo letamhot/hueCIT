@@ -42,14 +42,30 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group{{$errors->has('id_LoaiNS')?' has-error':''}}">
                     <strong>id_LoaiNS:</strong>
-                    <input type="text" name="id_LoaiNS" value="{{ $nhansu->id_LoaiNS }}" class="form-control" placeholder="id_LoaiNS">
+                    {{-- <input type="text" name="id_LoaiNS" value="{{ $nhansu->id_LoaiNS }}" class="form-control" placeholder="id_LoaiNS"> --}}
+                    <select class="form-control input-width" name="id_LoaiNS">
+                        @foreach ($loaiNs as $loains)
+                        <option value="{{ $loains->id }}" @if($loains->id == $nhansu->id_LoaiNS)
+                            {{ 'selected' }}
+                            @endif
+                            >{{ $loains->name }}</option>
+                        @endforeach
+                    </select>
                     <span class="text-danger">{{$errors->first('id_LoaiNS')}}</span>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group{{$errors->has('id_csyt')?' has-error':''}}">
                     <strong>Cơ sở y tế:</strong>
-                    <input type="text" name="id_csyt" value="{{ $nhansu->id_csyt }}" class="form-control" placeholder="id_csyt">
+                    {{-- <input type="text" name="id_csyt" value="{{ $nhansu->id_csyt }}" class="form-control" placeholder="id_csyt"> --}}
+                    <select class="form-control input-width" name="id_csyt">
+                        @foreach ($cosoyte as $csyt)
+                        <option value="{{ $csyt->id }}" @if($csyt->id == $nhansu->id_csyt)
+                            {{ 'selected' }}
+                            @endif
+                            >{{ $csyt->name }}</option>
+                        @endforeach
+                    </select>
                     <span class="text-danger">{{$errors->first('id_csyt')}}</span>
                 </div>
             </div>
