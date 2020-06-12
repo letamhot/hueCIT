@@ -13,7 +13,7 @@
                 <hr class="sm">
                 <p><strong>Sorry - Page Not Found!</strong></p>
 
-                <a href="{{route('login')}}">Login</a>
+                <a href="{{url('login')}}">Login</a>
             </div>
         </div>
     </div>
