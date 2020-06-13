@@ -12,16 +12,17 @@
 
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-  <!-- <link rel="stylesheet" type="text/css" href="youtube.css"> -->
+  {{-- <link rel="stylesheet" type="text/css" href="youtube.css"> --}}
   <link rel="stylesheet" href="{{ asset('css/index.css') }}">
   <link rel="stylesheet" href="{{ asset('js/highcharts.js') }}">
 
   <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="{{ asset('js/jquery-3.4.1-jquery.min.js') }}"></script>
+  {{-- <script src="{{ asset('js/jquery-3.4.1-jquery.min.js') }}"></script> --}}
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
   <script src="{{ asset('js/popper.min.js') }}"></script>
   <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-  <!--   <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
 
   <style>
     .dropdown {
@@ -517,7 +518,6 @@
         </script>
       </div>
       <div class="charts-item" id="highchart">
-
         <script type="text/javascript">
           $.ajax({
             type: 'GET',
@@ -601,7 +601,6 @@
       </div>
     </div>
   </div>
-
   <br>
   <br>
   <hr>
