@@ -12,37 +12,37 @@ class ChartDataController extends Controller
         $item1 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('StartDay', '<=', 2013)
+            ->whereYear('startDay', '<=', 2013)
             ->groupBy("loainhansu.name")
             ->get();
         $item2 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('StartDay', '<=', 2014)
+            ->whereYear('startDay', '<=', 2014)
             ->groupBy("loainhansu.name")
             ->get();
         $item3 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('StartDay', '<=', 2015)
+            ->whereYear('startDay', '<=', 2015)
             ->groupBy("loainhansu.name")
             ->get();
         $item4 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('StartDay', '<=', 2016)
+            ->whereYear('startDay', '<=', 2016)
             ->groupBy("loainhansu.name")
             ->get();
         $item5 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('StartDay', '<=', 2017)
+            ->whereYear('startDay', '<=', 2017)
             ->groupBy("loainhansu.name")
             ->get();
         $item6 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('StartDay', '<=', 2018)
+            ->whereYear('startDay', '<=', 2018)
             ->groupBy("loainhansu.name")
             ->get();
         return response()->json([$item1, $item2, $item3, $item4, $item5, $item6]);
