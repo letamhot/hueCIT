@@ -51,29 +51,29 @@ class ChartDataController extends Controller
     public function getCoSoYTe()
     {
         $item1 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
+            ->select(DB::raw("cosoyte.loaiCS, COUNT(*) as SoLuong"))
             ->whereYear('NgayTL', '<=', 2010)
-            ->groupBy("loaiCS")
+            ->groupBy("cosoyte.loaiCS")
             ->get();
         $item2 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
+            ->select(DB::raw("cosoyte.loaiCS, COUNT(*) as SoLuong"))
             ->whereYear('NgayTL', '<=', 2012)
-            ->groupBy("loaiCS")
+            ->groupBy("cosoyte.loaiCS")
             ->get();
         $item3 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
+            ->select(DB::raw("cosoyte.loaiCS, COUNT(*) as SoLuong"))
             ->whereYear('NgayTL', '<=', 2014)
-            ->groupBy("loaiCS")
+            ->groupBy("cosoyte.loaiCS")
             ->get();
         $item4 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
+            ->select(DB::raw("cosoyte.loaiCS, COUNT(*) as SoLuong"))
             ->whereYear('NgayTL', '<=', 2016)
-            ->groupBy("loaiCS")
+            ->groupBy("cosoyte.loaiCS")
             ->get();
         $item5 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
+            ->select(DB::raw("cosoyte.loaiCS, COUNT(*) as SoLuong"))
             ->whereYear('NgayTL', '<=', 2018)
-            ->groupBy("loaiCS")
+            ->groupBy("cosoyte.loaiCS")
             ->get();
 
         return response()->json([$item1, $item2, $item3, $item4, $item5]);
