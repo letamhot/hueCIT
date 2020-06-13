@@ -16,31 +16,31 @@
 
         <div class="form-group">
             <strong>Name:</strong>
-            {{ $nhansu->name }}
+            {{ $ns->name }}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>BirthDay:</strong>
-            {{ $nhansu->BirthDay }}
+            {{ $ns->birthDay }}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>StartDay:</strong>
-            {{ $nhansu->StartDay }}
+            {{ $ns->startDay }}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>id_LoaiNS:</strong>
-            {{ $nhansu->loaiNS->name }}
+            {{ $ns->loaiNS->name }}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Cơ sở y tế:</strong>
-            {{ $nhansu->cosoyte->name }}
+            {{ $ns->cosoyte->name }}
         </div>
     </div>
 </div>

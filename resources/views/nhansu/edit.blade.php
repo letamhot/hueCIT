@@ -19,30 +19,29 @@
         <input type="hidden" name="_method" value="POST">
         <div class="row">
                <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group{{$errors->has('Name')?' has-error':''}}">
+                <div class="form-group{{$errors->has('name')?' has-error':''}}">
                     <strong>Name:</strong>
-                    <input type="text" name="Name" value="{{ $nhansu->Name }}" class="form-control" placeholder="Name">
-                    <span class="text-danger">{{$errors->first('Name')}}</span>
+                    <input type="text" name="name" value="{{ $nhansu->name }}" class="form-control" placeholder="name">
+                    <span class="text-danger">{{$errors->first('name')}}</span>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group{{$errors->has('BirthDay')?' has-error':''}}">
+                <div class="form-group{{$errors->has('birthDay')?' has-error':''}}">
                     <strong>BirthDay:</strong>
-                    <input type="date" name="BirthDay" value="{{ $nhansu->BirthDay }}" class="form-control" placeholder="BirthDay">
-                    <span class="text-danger">{{$errors->first('BirthDay')}}</span>
+                    <input type="date" name="birthDay" value="{{ $nhansu->birthDay }}" class="form-control" placeholder="birthDay">
+                    <span class="text-danger">{{$errors->first('birthDay')}}</span>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group{{$errors->has('StartDay')?' has-error':''}}">
+                <div class="form-group{{$errors->has('startDay')?' has-error':''}}">
                     <strong>StartDay:</strong>
-                    <input type="date" name="StartDay" value="{{ $nhansu->StartDay }}" class="form-control" placeholder="StartDay">
-                    <span class="text-danger">{{$errors->first('StartDay')}}</span>
+                    <input type="date" name="startDay" value="{{ $nhansu->startDay }}" class="form-control" placeholder="startDay">
+                    <span class="text-danger">{{$errors->first('startDay')}}</span>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group{{$errors->has('id_LoaiNS')?' has-error':''}}">
                     <strong>id_LoaiNS:</strong>
-                    {{-- <input type="text" name="id_LoaiNS" value="{{ $nhansu->id_LoaiNS }}" class="form-control" placeholder="id_LoaiNS"> --}}
                     <select class="form-control input-width" name="id_LoaiNS">
                         @foreach ($loaiNs as $loains)
                         <option value="{{ $loains->id }}" @if($loains->id == $nhansu->id_LoaiNS)

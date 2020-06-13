@@ -20,26 +20,24 @@
                     <div class="form-group">
                         <label class="control-label col-sm-2" >Name</label>
                         <div class="col-sm-10">
-                            <input type="text" name="Name" id="Name" class="form-control">
+                            <input type="text" name="name" id="name" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" >BirthDay</label>
                         <div class="col-sm-10">
-                            <input type="date" name="BirthDay" id="BirthDay" class="form-control">
+                            <input type="date" name="birthDay" id="birthDay" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" >StartDay</label>
                         <div class="col-sm-10">
-                            <input type="date" name="StartDay" id="StartDay" class="form-control">
+                            <input type="date" name="startDay" id="startDay" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" >id_LoaiNS</label>
                         <div class="col-sm-10">
-                            {{-- <input type="text" name="id_LoaiNS" id="id_LoaiNS" class="form-control">
-                             --}}
                              <select class="form-control input-width" name="id_LoaiNS">
                                 @foreach ($loaiNs as $loains)
                                 <option value="{{ $loains->id }}" @if(old('id_LoaiNS')==$loains->id)

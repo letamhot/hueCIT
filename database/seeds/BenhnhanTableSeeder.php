@@ -26,7 +26,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '2006-09-16',
                 'StartDay' => '2018-12-24',
                 'tenbenh' => 'Bệnh U Bướu',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 12,
             ),
             1 => 
@@ -38,7 +38,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1976-12-04',
                 'StartDay' => '2016-12-23',
                 'tenbenh' => 'Bệnh Lao',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 9,
             ),
             2 => 
@@ -50,7 +50,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1975-06-15',
                 'StartDay' => '2017-09-02',
                 'tenbenh' => 'Bệnh Da Liễu',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 12,
             ),
             3 => 
@@ -62,7 +62,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1976-12-04',
                 'StartDay' => '2016-12-23',
                 'tenbenh' => 'Bệnh Lao',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 12,
             ),
             4 => 
@@ -74,7 +74,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1983-12-16',
                 'StartDay' => '2018-12-17',
                 'tenbenh' => 'Bệnh Thủy Đậu',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 14,
             ),
             5 => 
@@ -86,7 +86,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1976-12-04',
                 'StartDay' => '2016-12-23',
                 'tenbenh' => 'Bệnh Lao',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 9,
             ),
             6 => 
@@ -98,7 +98,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1976-12-04',
                 'StartDay' => '2016-12-23',
                 'tenbenh' => 'Bệnh Lao',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 16,
             ),
             7 => 
@@ -110,7 +110,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1983-12-16',
                 'StartDay' => '2018-12-17',
                 'tenbenh' => 'Bệnh Thủy Đậu',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 17,
             ),
             8 => 
@@ -122,7 +122,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1983-12-16',
                 'StartDay' => '2018-12-17',
                 'tenbenh' => 'Bệnh Căng Thẳng Thần Kinh',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 12,
             ),
             9 => 
@@ -134,7 +134,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1999-07-08',
                 'StartDay' => '2016-07-23',
                 'tenbenh' => 'Bệnh hô hấp',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 5,
             ),
             10 => 
@@ -146,7 +146,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '2000-04-23',
                 'StartDay' => '2017-07-15',
                 'tenbenh' => 'Bệnh Sởi',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 13,
             ),
             11 => 
@@ -158,7 +158,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1999-07-08',
                 'StartDay' => '2016-07-23',
                 'tenbenh' => 'Bệnh hô hấp',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 5,
             ),
             12 => 
@@ -170,7 +170,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '2000-04-23',
                 'StartDay' => '2017-07-15',
                 'tenbenh' => 'Bệnh Sởi',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 14,
             ),
             13 => 
@@ -182,7 +182,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1999-07-08',
                 'StartDay' => '2016-07-23',
                 'tenbenh' => 'Bệnh hô hấp',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 6,
             ),
             14 => 
@@ -194,7 +194,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '2000-04-23',
                 'StartDay' => '2017-07-15',
                 'tenbenh' => 'Bệnh Sởi',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 4,
             ),
             15 => 
@@ -206,7 +206,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1997-08-12',
                 'StartDay' => '2016-11-16',
                 'tenbenh' => 'Bệnh Da Liễu',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 4,
             ),
             16 => 
@@ -218,7 +218,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1985-03-17',
                 'StartDay' => '2017-08-12',
                 'tenbenh' => 'Bệnh U Bướu',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 4,
             ),
             17 => 
@@ -242,7 +242,7 @@ class BenhnhanTableSeeder extends Seeder
                 'BirthDay' => '1997-08-12',
                 'StartDay' => '2016-09-17',
                 'tenbenh' => 'Bệnh Viên Răng',
-                'id_giuong' => null,
+                'id_giuong' => 2,
                 'id_csyt' => 8,
             ),
         ));

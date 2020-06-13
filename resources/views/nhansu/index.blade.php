@@ -14,7 +14,7 @@
                 <a href="{{url('yte')}}" class="btn btn-primary">Back</a>
             </div>
             <div class="pull-left">
-                <a class="btn btn-success" href="{{ route('nhansu.add') }}"> Add</a>
+                <a class="btn btn-success" href="{{ route('nhansu.create') }}"> Add</a>
             </div>
 
         </div>
@@ -37,18 +37,18 @@
 
                     <!-- Table Body -->
                     <tbody>
-                        @foreach($nhansu as $ns)
+                        @foreach($nhansu as $nhansu)
                         <tr>
-                            <td>{{$ns->id}}</td>
-                            <td>{{$ns->name}}</td>
-                            <td>{{$ns->BirthDay}}</td>
-                            <td>{{$ns->StartDay}}</td>
-                            <td>{{$ns->loaiNS->name}}</td>
-                            <td>{{$ns->cosoyte->name}}</td>
+                            <td>{{$nhansu->id}}</td>
+                            <td>{{$nhansu->name}}</td>
+                            <td>{{$nhansu->birthDay}}</td>
+                            <td>{{$nhansu->startDay}}</td>
+                            <td>{{$nhansu->loaiNS->name}}</td>
+                            <td>{{$nhansu->cosoyte->name}}</td>
                             <td>
-                                <a href="{{ route('nhansu.details', $ns->id) }}" class="label label-success">Details</a>
-                                <a href="{{ route('nhansu.edit', $ns->id) }}" class="label label-warning">Edit</a>
-                                <a href="{{ route('nhansu.delete', $ns->id) }}" class="label label-danger"
+                                <a href="{{ route('nhansu.show', $nhansu->id) }}" class="label label-success">Details</a>
+                                <a href="{{ route('nhansu.edit', $nhansu->id) }}" class="label label-warning">Edit</a>
+                                <a href="{{ route('nhansu.destroy', $nhansu->id) }}" class="label label-danger"
                                     onclick="return confirm('Are you sure to delete?')">Delete</a>
                             </td>
                         </tr>

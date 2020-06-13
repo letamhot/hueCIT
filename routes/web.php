@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('layouts.home');
@@ -31,7 +32,6 @@ Route::get('blank', function () {
  });
 
 Route::resource('post','PostsController');
-Auth::routes();
 
 Route::get('/index', 'PostsController@index')->name('index');
 Route::get('/create', 'PostsController@create')->name('create');
@@ -56,7 +56,8 @@ Route::get('users', function () {
 });
 
 // route to show the login form
-Route::get('/login', array('uses' => 'Auth\LoginController@showLogin'));
+Route::get('/login', array('uses' => 'Auth\LoginController@showLogin'))
+;
 
 Route::post('signin', 'Auth\LoginController@doLogin');
 Route::get('logout', 'Auth\LoginController@logout');
@@ -75,27 +76,23 @@ Route::get('/highchart/benhnhan', 'ChartDataController@getBenhnhan');
 Route::get('ns', function () {
     return view('layouts.NSAD');
 });
-Route::resource('/Nhansu', 'NhansuController');
-Route::get('/Nhansu', 'NhansuController@index')->name('nhansu.index');
-Route::get('/Nhansu/details/{id}', 'NhansuController@details')->name('nhansu.details');
-Route::get('/Nhansu/add', 'NhansuController@add')->name('nhansu.add');
-Route::post('/Nhansu/insert', 'NhansuController@insert')->name('nhansu.insert');
-Route::get('/Nhansu/edit/{id}', 'NhansuController@edit')->name('nhansu.edit');
-Route::post('/Nhansu/update/{id}', 'NhansuController@update')->name('nhansu.update');
-Route::get('/Nhansu/delete/{id}', 'NhansuController@delete')->name('nhansu.delete');
+Route::resource('/nhansu', 'NhansuController');
+Route::post('/insert', 'NhansuController@insert')->name('nhansu.insert');
+
 Route::get('/live_search', 'LiveSearch@index');
 Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
 Route::get('bn', function () {
     return view('layouts.BNAD');
 });
+Route::resource('/benhnhan', 'BenhnhanController');
 
-Route::get('/benhnhan', 'BenhnhanController@index')->name('benhnhan.index');
-Route::get('/benhnhan/details/{id}', 'BenhnhanController@details')->name('benhnhan.details');
-Route::get('/benhnhan/add', 'BenhnhanController@add')->name('benhnhan.add');
-Route::post('/benhnhan/insert', 'BenhnhanController@insert')->name('benhnhan.insert');
-Route::get('/benhnhan/edit/{id}', 'BenhnhanController@edit')->name('benhnhan.edit');
-Route::post('/benhnhan/update/{id}', 'BenhnhanController@update')->name('benhnhan.update');
-Route::get('/benhnhan/delete/{id}', 'BenhnhanController@delete')->name('benhnhan.delete');
+Route::get('/index', 'BenhnhanController@index')->name('benhnhan.index');
+Route::get('/details/{id}', 'BenhnhanController@details')->name('benhnhan.details');
+Route::get('/add', 'BenhnhanController@add')->name('benhnhan.add');
+Route::post('/insert', 'BenhnhanController@insert')->name('benhnhan.insert');
+Route::get('/edit/{id}', 'BenhnhanController@edit')->name('benhnhan.edit');
+Route::post('/update/{id}', 'BenhnhanController@update')->name('benhnhan.update');
+Route::get('/delete/{id}', 'BenhnhanController@delete')->name('benhnhan.delete');
 
 Route::get('csyt', function () {
     return view('layouts.CSYT');

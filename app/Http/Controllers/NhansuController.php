@@ -23,16 +23,16 @@ class NhansuController extends Controller
         return view('nhansu.index', compact('nhansu'));
     }
 
-    public function details($id)
+    public function show($id)
     {
         //fetch post data
         $ns = nhansu::find($id);
 
         //pass posts data to view and load list view
-        return view('nhansu.details', ['nhansu' => $ns]);
+        return view('nhansu.details', compact('ns'));
     }
 
-    public function add()
+    public function create()
     {
         //load form view
         $loaiNs = loaiNS::all();
@@ -45,16 +45,16 @@ class NhansuController extends Controller
         //validate post data
         $this->validate($request, [
             'name' => 'required',
-            'BirthDay' => 'required',
-            'StartDay' => 'required',
+            'birthDay' => 'required',
+            'startDay' => 'required',
             'id_LoaiNS' => 'required',
             'id_csyt' => 'required',
         ]);
 
         $nhansu = new nhansu();
         $nhansu->name = $request->name;
-        $nhansu->BirthDay = $request->BirthDay;
-        $nhansu->StartDay = $request->StartDay;
+        $nhansu->birthDay = $request->birthDay;
+        $nhansu->startDay = $request->startDay;
         $nhansu->id_LoaiNS = $request->id_LoaiNS;
         $nhansu->id_csyt = $request->id_csyt;
         $nhansu->save();
@@ -78,21 +78,21 @@ class NhansuController extends Controller
         //validate post data
         $this->validate($request, [
             'name' => 'required',
-            'BirthDay' => 'required',
-            'StartDay' => 'required',
+            'birthDay' => 'required',
+            'startDay' => 'required',
             'id_LoaiNS' => 'required',
         ]);
         $nhansu = nhansu::findOrfail($id);
         $nhansu->name = $request->name;
-        $nhansu->BirthDay = $request->BirthDay;
-        $nhansu->StartDay = $request->StartDay;
+        $nhansu->birthDay = $request->birthDay;
+        $nhansu->startDay = $request->startDay;
         $nhansu->id_LoaiNS = $request->id_LoaiNS;
         $nhansu->id_csyt = $request->id_csyt;
         $nhansu->save();
         return redirect()->route('nhansu.index');
     }
 
-    public function delete($id)
+    public function destroy($id)
     {
         //update post data
         $nhansu = nhansu::findOrfail($id);

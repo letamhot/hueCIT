@@ -9,7 +9,7 @@ class nhansu extends Model
     protected $table='nhansu';
     protected $primaryKey='id';
     protected $fillable = ['Name','id_LoaiNS'];
-    protected $dates = ['BirthDay','StartDay'];
+    protected $dates = ['birthDay','startDay'];
     
     public function cosoyte()
     {

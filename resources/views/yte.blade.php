@@ -217,7 +217,7 @@
             <hr>
             <li><a href="{{url('post')}}"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Quản lý tài khoản</a>
             </li>
-            <li><a href="{{url('Nhansu')}}"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Quản lý nhân sự</a>
+            <li><a href="{{url('nhansu')}}"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Quản lý nhân sự</a>
             </li>
             <li><a href="{{url('benhnhan')}}"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Quản lý bệnh
                     nhân</a></li>

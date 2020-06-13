@@ -31,7 +31,7 @@ class BenhnhanController extends Controller
         $benhnhan = benhnhan::find($id);
 // 
         //pass Benhnhans data to view and load list view
-        return view('benhnhan.details', ['benhnhan' => $benhnhan]);
+        return view('benhnhan.details', compact('benhnhan'));
     }
 
     public function add()

@@ -16,8 +16,8 @@ class CreateNhansuTable extends Migration {
 		{
 			$table->integer('id', true);
 			$table->text('name', 65535);
-			$table->date('BirthDay');
-			$table->date('StartDay');
+			$table->date('birthDay');
+			$table->date('startDay');
 			$table->integer('id_LoaiNS')->index('foreignkey')->nullable();
 			$table->integer('id_csyt')->index('id_csyt')->nullable();
 		});
