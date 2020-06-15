@@ -4,10 +4,6 @@
     <div class="pull-right">
         <a href="{{url('yte')}}" class="btn btn-primary">Back</a>
     </div>
-
-    <div class="pull-left">
-        <a href="{{route('post.create')}}" class="btn btn-success">Create New users</a>
-    </div>
 </div>
 <br />
 
@@ -25,7 +21,7 @@
                 <th>Email</th>
                 <th>Created_at</th>
                 <th>Updated_at</th>
-                <th colspan="3" style="text-align: center">Action</th>
+                <th colspan="2" style="text-align: center">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -39,7 +35,6 @@
                 <td>{{$value->updated_at}}</td>
                 <td>
                     <a href="{{ route('post.show', $value->id) }}" class="btn btn-success"><i class="fa fa-window-restore" title="Detail"></a></td>
-                    <td><a href="{{ route('post.edit', $value->id) }}" class="btn btn-warning"><i class="fa fa-edit" title="Edit"></i></a></td>
                         <td><form action="{{ route('post.destroy', $value->id) }}" method="POST">
                             @csrf
                             @method('DELETE')

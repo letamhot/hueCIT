@@ -12,11 +12,11 @@
         @endif
         <div class="panel panel-default">
             <div class="panel-heading">
-                Add<a href="{{ route('cosoyte.index') }}" class="label label-primary pull-right">Back</a>
+                Add<a href="{{ route('cosoyte.index') }}" class="btn btn-primary pull-right">Back</a>
             </div>
             <div class="panel-body">
-                <form action="{{ route('cosoyte.insert') }}" method="POST" class="form-horizontal">
-                    {{ csrf_field() }}
+                <form action="{{ route('cosoyte.store') }}" method="POST" class="form-horizontal">
+                    @csrf
                     <div class="form-group">
                         <label class="control-label col-sm-2" >Name</label>
                         <div class="col-sm-10">

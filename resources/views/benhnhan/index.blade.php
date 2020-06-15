@@ -7,7 +7,7 @@
         <a href="{{url('yte')}}" class="btn btn-primary">Back</a>
     </div>
     <div class="pull-left">
-        <a href="{{route('benhnhan.add')}}" class="btn btn-success">Add</a>
+        <a href="{{route('benhnhan.create')}}" class="btn btn-success">Add</a>
     </div>
 </div>
 <br />

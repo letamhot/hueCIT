@@ -34,7 +34,7 @@ class BenhnhanController extends Controller
         return view('benhnhan.details', compact('benhnhan'));
     }
 
-    public function add()
+    public function create()
     {
         //load form view
         $cosoyte = cosoyte::all();
@@ -42,7 +42,7 @@ class BenhnhanController extends Controller
         return view('benhnhan.add', compact('giuong', 'cosoyte'));
     }
 
-    public function insert(Request $request)
+    public function store(Request $request)
     {
         //validate Benhnhan data
         $this->validate($request, [

@@ -12,11 +12,11 @@
         @endif
         <div class="panel panel-default">
             <div class="panel-heading">
-                Add a New Post <a href="{{ route('benhnhan.index') }}" class="label label-primary pull-right">Back</a>
+                Add a New Post <a href="{{ route('benhnhan.index') }}" class="btn btn-primary pull-right">Back</a>
             </div>
             <div class="panel-body">
-                <form action="{{ route('benhnhan.insert') }}" method="POST" class="form-horizontal">
-                    {{ csrf_field() }}
+                <form action="{{ route('benhnhan.store') }}" method="POST" class="form-horizontal">
+                    @csrf
                     <div class="form-group">
                         <label class="control-label col-sm-2" >Ho Ten</label>
                         <div class="col-sm-10">

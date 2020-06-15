@@ -4,41 +4,42 @@
 <div class="row">
     <div class="col-lg-12">
         @if($errors->any())
-            <div class="alert alert-danger">
+        <div class="alert alert-danger">
             @foreach($errors->all() as $error)
-                <p>{{ $error }}</p>
+            <p>{{ $error }}</p>
             @endforeach()
-            </div>
+        </div>
         @endif
         <div class="panel panel-default">
+            <a href="{{ route('nhansu.index') }}" class="btn btn-primary pull-right">Back</a>
             <div class="panel-heading">
-                Add a New Post <a href="{{ route('nhansu.index') }}" class="label label-primary pull-right">Back</a>
+                Add a New Post
             </div>
             <div class="panel-body">
-                <form action="{{ route('nhansu.insert') }}" method="POST" class="form-horizontal">
-                    {{ csrf_field() }}
+                <form action="{{ route('nhansu.store') }}" method="POST" class="form-horizontal">
+                    @csrf
                     <div class="form-group">
-                        <label class="control-label col-sm-2" >Name</label>
+                        <label class="control-label col-sm-2">Name</label>
                         <div class="col-sm-10">
                             <input type="text" name="name" id="name" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-2" >BirthDay</label>
+                        <label class="control-label col-sm-2">BirthDay</label>
                         <div class="col-sm-10">
                             <input type="date" name="birthDay" id="birthDay" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-2" >StartDay</label>
+                        <label class="control-label col-sm-2">StartDay</label>
                         <div class="col-sm-10">
                             <input type="date" name="startDay" id="startDay" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-2" >id_LoaiNS</label>
+                        <label class="control-label col-sm-2">id_LoaiNS</label>
                         <div class="col-sm-10">
-                             <select class="form-control input-width" name="id_LoaiNS">
+                            <select class="form-control input-width" name="id_LoaiNS">
                                 @foreach ($loaiNs as $loains)
                                 <option value="{{ $loains->id }}" @if(old('id_LoaiNS')==$loains->id)
                                     {{ "selected" }}
@@ -49,7 +50,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-2" >Cơ sở y tế</label>
+                        <label class="control-label col-sm-2">Cơ sở y tế</label>
                         <div class="col-sm-10">
                             {{-- <input type="text" name="id_csyt" id="id_csyt" class="form-control"> --}}
                             <select class="form-control input-width" name="id_csyt">

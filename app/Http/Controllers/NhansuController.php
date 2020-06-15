@@ -40,7 +40,7 @@ class NhansuController extends Controller
         return view('nhansu.add', compact('loaiNs', 'cosoyte'));
     }
 
-    public function insert(Request $request)
+    public function store(Request $request)
     {
         //validate post data
         $this->validate($request, [
@@ -58,7 +58,7 @@ class NhansuController extends Controller
         $nhansu->id_LoaiNS = $request->id_LoaiNS;
         $nhansu->id_csyt = $request->id_csyt;
         $nhansu->save();
-        return redirect()->route('nhansu.index');
+        return redirect()->route('nhansu.index')->with('success', 'Nhan Su Created successfully');
     }
 
     public function edit($id)
@@ -73,7 +73,7 @@ class NhansuController extends Controller
         return view('nhansu.edit', compact('nhansu', 'cosoyte', 'loaiNs'));
     }
 
-    public function update($id, Request $request)
+    public function update( Request $request, $id)
     {
         //validate post data
         $this->validate($request, [
@@ -89,7 +89,7 @@ class NhansuController extends Controller
         $nhansu->id_LoaiNS = $request->id_LoaiNS;
         $nhansu->id_csyt = $request->id_csyt;
         $nhansu->save();
-        return redirect()->route('nhansu.index');
+        return redirect()->route('nhansu.index')->with('success', 'NhanSu Updated successfully');
     }
 
     public function destroy($id)

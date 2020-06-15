@@ -32,13 +32,6 @@ Route::get('blank', function () {
  });
 
 Route::resource('post','PostsController');
-
-Route::get('/index', 'PostsController@index')->name('index');
-Route::get('/create', 'PostsController@create')->name('create');
-Route::get('/edit', 'PostsController@edit')->name('edit');
-Route::get('/layouts', 'PostsController@layouts')->name('layouts');
-Route::get('/show', 'PostsController@show')->name('show');
-
 Route::group(['msql_tablename()' => 'users'], function () {
 Route::get('/register','Auth\RegisterController@getRegister');
 Route::get('/forgot', 'Auth\ForgotPasswordController@getForgotPassword');
@@ -77,13 +70,6 @@ Route::get('ns', function () {
     return view('layouts.NSAD');
 });
 Route::resource('/nhansu', 'NhansuController');
-Route::get('/index', 'NhansuController@index')->name('benhnhan.index');
-Route::get('/details/{id}', 'NhansuController@details')->name('benhnhan.details');
-Route::get('/add', 'NhansuController@add')->name('benhnhan.add');
-Route::post('/insert', 'NhansuController@insert')->name('benhnhan.insert');
-Route::get('/edit/{id}', 'NhansuController@edit')->name('benhnhan.edit');
-Route::post('/update/{id}', 'NhansuController@update')->name('benhnhan.update');
-Route::POST('/destroy/{id}', 'NhansuController@destroy')->name('benhnhan.destroy');
 
 Route::get('/live_search', 'LiveSearch@index');
 Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
@@ -92,22 +78,7 @@ Route::get('bn', function () {
 });
 Route::resource('/benhnhan', 'BenhnhanController');
 
-Route::get('/index', 'BenhnhanController@index')->name('benhnhan.index');
-Route::get('/details/{id}', 'BenhnhanController@details')->name('benhnhan.details');
-Route::get('/add', 'BenhnhanController@add')->name('benhnhan.add');
-Route::post('/insert', 'BenhnhanController@insert')->name('benhnhan.insert');
-Route::get('/edit/{id}', 'BenhnhanController@edit')->name('benhnhan.edit');
-Route::post('/update/{id}', 'BenhnhanController@update')->name('benhnhan.update');
-Route::delete('/destroy/{id}', 'BenhnhanController@destroy')->name('benhnhan.destroy');
-
 Route::get('csyt', function () {
     return view('layouts.CSYT');
 });
-
-Route::get('/cosoyte', 'CosoyteController@index')->name('cosoyte.index');
-Route::get('/cosoyte/details/{id}', 'CosoyteController@details')->name('cosoyte.details');
-Route::get('/cosoyte/add', 'CosoyteController@add')->name('cosoyte.add');
-Route::post('/cosoyte/insert', 'CosoyteController@insert')->name('cosoyte.insert');
-Route::get('/cosoyte/edit/{id}', 'CosoyteController@edit')->name('cosoyte.edit');
-Route::post('/cosoyte/update/{id}', 'CosoyteController@update')->name('cosoyte.update');
-Route::delete('/cosoyte/destroy/{id}', 'CosoyteController@destroy')->name('cosoyte.destroy');
+Route::resource('/cosoyte', 'CosoyteController');

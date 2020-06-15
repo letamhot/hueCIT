@@ -14,7 +14,7 @@
                 <a href="{{url('yte')}}" class="btn btn-primary" style="float: left">Back</a>
             </div>
             <div class="pull-left">
-                <a class="btn btn-success" href="{{ route('cosoyte.add') }}">Add</a>
+                <a class="btn btn-success" href="{{ route('cosoyte.create') }}">Add</a>
             </div>
         </div>
         <br>
@@ -42,7 +42,7 @@
                             <td>{{$csyt->sdt}}</td>
                             <td>{{$csyt->loaiCS}}</td>
                             <td>{{$csyt->NgayTL}}</td>
-                            <td><a href="{{ route('cosoyte.details', $csyt->id_csyt) }}" class="btn btn-success"><i class="fa fa-window-restore" title="Detail"></a></td>
+                            <td><a href="{{ route('cosoyte.show', $csyt->id_csyt) }}" class="btn btn-success"><i class="fa fa-window-restore" title="Detail"></a></td>
                                 <td><a href="{{ route('cosoyte.edit', $csyt->id_csyt) }}" class="btn btn-warning"><i class="fa fa-edit" title="Edit"></i></a></td>
                                 <td><form action="{{ route('cosoyte.destroy', $csyt->id_csyt) }}" method="POST">
                                             @csrf

@@ -7,7 +7,7 @@
             <h2>Read Post</h2>
         </div>
         <div class="pull-right">
-            <a href="{{ route('nhansu.index') }}" class="label label-primary pull-right"> Back</a>
+            <a href="{{ route('nhansu.index') }}" class="btn btn-primary pull-right"> Back</a>
         </div>
     </div>
 </div>

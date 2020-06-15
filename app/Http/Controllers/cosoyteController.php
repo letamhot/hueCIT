@@ -21,7 +21,7 @@ class CosoyteController extends Controller
         return view('cosoyte.index', compact('cosoyte'));
     }
     
-    public function details($id){
+    public function show($id){
         //fetch post data
         $cosoyte = cosoyte::find($id);
         
@@ -29,12 +29,12 @@ class CosoyteController extends Controller
         return view('cosoyte.details', compact('cosoyte'));
     }
     
-    public function add(){
+    public function create(){
         //load form view
         return view('cosoyte.add');
     }
     
-    public function insert(Request $request){
+    public function store(Request $request){
         //validate post data
         $this->validate($request, [
             'name'=>'required',

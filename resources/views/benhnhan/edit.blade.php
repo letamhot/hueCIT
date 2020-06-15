@@ -71,7 +71,7 @@
                             >{{ $giuongbenh->name }}</option>
                         @endforeach
                     </select>
-                    <span class="text-danger">{{$errors->first('type')}}</span>
+                    <span class="text-danger">{{$errors->first('id_giuong')}}</span>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -79,7 +79,7 @@
                     <strong>Cơ sở y tế:</strong>
                     <select class="form-control input-width" name="id_csyt">
                         @foreach ($cosoyte as $csyt)
-                        <option value="{{ $csyt->id }}" @if($csyt->id == $benhnhan->id_csyt)
+                        <option value="{{ $csyt->id_csyt }}" @if($csyt->id_csyt == $benhnhan->id_csyt)
                             {{ 'selected' }}
                             @endif
                             >{{ $csyt->name }}</option>

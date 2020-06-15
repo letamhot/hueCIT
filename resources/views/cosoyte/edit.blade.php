@@ -12,7 +12,7 @@
         @endif
         <div class="panel panel-default">
             <div class="panel-heading">
-                Edit Bệnh nhân <a href="{{ route('cosoyte.index') }}" class="label label-primary pull-right">Back</a>
+                Edit Bệnh nhân <a href="{{ route('cosoyte.index') }}" class="btn btn-primary pull-right">Back</a>
             </div>
             <form action="{{route('cosoyte.update',$cosoyte->id_csyt)}}" method="POST" role="form">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">

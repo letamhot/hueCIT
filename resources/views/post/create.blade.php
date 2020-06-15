@@ -11,6 +11,7 @@
         </div>
     </div>
     <form action="{{route('post.store')}}" method="post">
+        @csrf
         <input type="hidden" name="_token" value="{{csrf_token()}}">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
