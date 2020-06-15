@@ -124,4 +124,5 @@ ul li a:hover{
             @yield('content')
         </div>
     </body>
+    @stack('nhansu')
 </html>

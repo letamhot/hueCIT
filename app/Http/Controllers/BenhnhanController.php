@@ -25,7 +25,7 @@ class BenhnhanController extends Controller
         return view('benhnhan.index', compact('benhnhan'));
     }
 
-    public function details($id)
+    public function show($id)
     {
         //fetch Benhnhan data
         $benhnhan = benhnhan::find($id);

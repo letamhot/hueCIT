@@ -46,7 +46,7 @@
                             <td>{{$nhansu->loaiNS->name}}</td>
                             <td>{{$nhansu->cosoyte->name}}</td>
                             <td>
-                                <a href="{{ route('nhansu.show', $nhansu->id) }}" class="btn btn-success"><i class="fa fa-window-restore" title="Detail"></a></td>
+                                <a href="{{ route('nhansu.show', $nhansu->id) }}" class="btn btn-success"><i class="fa fa-window-restore" title="Show"></a></td>
                                 <td><a href="{{ route('nhansu.edit', $nhansu->id) }}" class="btn btn-warning"><i class="fa fa-edit" title="Edit"></i></a></td>
                                     <td><form action="{{ route('nhansu.destroy', $nhansu->id) }}" method="POST">
                                         @csrf

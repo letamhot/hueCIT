@@ -478,8 +478,8 @@
                         var names = [];
                         data.forEach(item => {
                             item.forEach(i => {
-                                if (!names.includes(i.loaiCS))
-                                    names.push(i.loaiCS);
+                                if (!names.includes(i.name))
+                                    names.push(i.name);
                             });
                         });
                         var chartData = [];
@@ -488,7 +488,7 @@
                             data.forEach(item => {
                                 var isHasValue = false;
                                 item.forEach(i => {
-                                    if (i.loaiCS === name) {
+                                    if (i.name === name) {
                                         arr.push(i.SoLuong);
                                         isHasValue = true;
                                     }

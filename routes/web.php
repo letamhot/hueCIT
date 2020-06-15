@@ -71,6 +71,7 @@ Route::get('ns', function () {
 });
 Route::resource('/nhansu', 'NhansuController');
 
+
 Route::get('/live_search', 'LiveSearch@index');
 Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
 Route::get('bn', function () {

@@ -28,7 +28,7 @@
                     <span class="text-danger">{{$errors->first('email')}}</span>
                 </div>
             </div>
-             <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group{{$errors->has('password')?' has-error':''}}">
                     <strong>Password :</strong>
                     <textarea name="password" id="password"  rows="10" placeholder="password" class="form-control"></textarea>
