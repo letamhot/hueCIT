@@ -16,6 +16,8 @@ class CreateLoainhansuTable extends Migration {
 		{
 			$table->integer('id', true);
 			$table->text('name', 65535);
+			$table->timestamps();
+
 		});
 	}
 

@@ -104,7 +104,7 @@ class BenhnhanController extends Controller
         return redirect()->route('benhnhan.index')->with('success', 'Benhnhan updated successfully');
     }
 
-    public function delete($id)
+    public function destroy($id)
     {
         //update Benhnhan data
         $benhnhan = benhnhan::find($id);

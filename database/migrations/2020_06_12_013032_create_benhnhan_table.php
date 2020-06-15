@@ -22,6 +22,8 @@ class CreateBenhnhanTable extends Migration {
 			$table->text('tenbenh', 65535);
 			$table->integer('id_giuong')->index('id_giuong')->nullable();
 			$table->integer('id_csyt')->index('par_ind')->nullable();
+			$table->timestamps();
+
 		});
 	}
 

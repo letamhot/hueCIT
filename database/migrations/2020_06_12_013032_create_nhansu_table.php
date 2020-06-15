@@ -20,6 +20,8 @@ class CreateNhansuTable extends Migration {
 			$table->date('startDay');
 			$table->integer('id_LoaiNS')->index('foreignkey')->nullable();
 			$table->integer('id_csyt')->index('id_csyt')->nullable();
+			$table->timestamps();
+
 		});
 	}
 

@@ -26,7 +26,7 @@ class CosoyteController extends Controller
         $cosoyte = cosoyte::find($id);
         
         //pass posts data to view and load list view
-        return view('cosoyte.details', ['cosoyte' => $cosoyte]);
+        return view('cosoyte.details', compact('cosoyte'));
     }
     
     public function add(){
@@ -56,9 +56,9 @@ class CosoyteController extends Controller
     }
 
     
-    public function edit($id_csyt){
+    public function edit($id){
         //get post data by id_csyt
-        $cosoyte = cosoyte::find($id_csyt);
+        $cosoyte = cosoyte::find($id);
         
         //load form view
         return view('cosoyte.edit', compact('cosoyte'));
@@ -85,7 +85,7 @@ class CosoyteController extends Controller
         return redirect()->route('cosoyte.index')->with('success','Post updated successfully');
     }
     
-    public function delete($id){
+    public function destroy($id){
         //update post data
         $cosoyte = cosoyte::findOrfail($id);
         $cosoyte->delete();

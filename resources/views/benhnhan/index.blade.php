@@ -31,7 +31,7 @@
                 <th>Ten Giuong</th>
                 <th>Co so y te</th>
 
-                <th width="280px">Action</th>
+                <th colspan="3" style="text-align: center">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -47,13 +47,15 @@
                 <td>{{$bn->tenbenh}}</td>
                 <td>{{$bn->giuongbenh->name}}</td>
                 <td>{{$bn->cosoyte->name}}</td>
-                <td>
-
-                    <a href="{{ route('benhnhan.details', $bn->id) }}" class="label label-success">Details</a>
-                    <a href="{{ route('benhnhan.edit', $bn->id) }}" class="label label-warning">Edit</a>
-                    <a href="{{ route('benhnhan.delete', $bn->id) }}" class="label label-danger"
-                        onclick="return confirm('Are you sure to delete?')">Delete</a>
-
+                <td><a href="{{ route('benhnhan.show', $bn->id) }}" class="btn btn-success"><i class="fa fa-window-restore" title="Detail"></a></td>
+                <td><a href="{{ route('benhnhan.edit', $bn->id) }}" class="btn btn-warning"><i class="fa fa-edit" title="Edit"></i></a></td>
+                <td><form action="{{ route('benhnhan.destroy', $bn->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-danger" type="submit"
+                                onclick="return confirm('Are you sure to delete?')"><i class="fa fa-backspace"
+                                    title="Delete"></i></button>
+                        </form>
                 </td>
             </tr>
             @endforeach

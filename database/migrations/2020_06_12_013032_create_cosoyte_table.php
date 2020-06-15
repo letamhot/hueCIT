@@ -20,6 +20,8 @@ class CreateCosoyteTable extends Migration {
 			$table->string('sdt');
 			$table->text('loaiCS');
 			$table->date('NgayTL');
+			$table->timestamps();
+
 		});
 	}
 

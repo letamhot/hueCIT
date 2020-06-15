@@ -25,7 +25,7 @@
                 <th>Email</th>
                 <th>Created_at</th>
                 <th>Updated_at</th>
-                <th width="280px">Action</th>
+                <th colspan="3" style="text-align: center">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -38,11 +38,16 @@
                 <td>{{$value->created_at}}</td>
                 <td>{{$value->updated_at}}</td>
                 <td>
-                    <a href="{{ route('post.show', $value->id) }}" class="label label-success">Show</a>
-                    <a href="{{ route('post.edit', $value->id) }}" class="label label-warning">Edit</a>
-                    <a href="{{ route('post.destroy', $value->id) }}" class="label label-danger"
-                        onclick="return confirm('Are you sure to delete?')">Delete</a>
-
+                    <a href="{{ route('post.show', $value->id) }}" class="btn btn-success"><i class="fa fa-window-restore" title="Detail"></a></td>
+                    <td><a href="{{ route('post.edit', $value->id) }}" class="btn btn-warning"><i class="fa fa-edit" title="Edit"></i></a></td>
+                        <td><form action="{{ route('post.destroy', $value->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-danger" type="submit"
+                                onclick="return confirm('Are you sure to delete?')"><i class="fa fa-backspace"
+                                    title="Delete"></i></button>
+                        </form>
+                    </td>
                 </td>
             </tr>
             @endforeach

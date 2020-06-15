@@ -14,7 +14,7 @@
             <div class="panel-heading">
                 Edit Bệnh nhân <a href="{{ route('cosoyte.index') }}" class="label label-primary pull-right">Back</a>
             </div>
-            <form action="{{route('cosoyte.update',$cosoyte->id)}}" method="POST" role="form">
+            <form action="{{route('cosoyte.update',$cosoyte->id_csyt)}}" method="POST" role="form">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input type="hidden" name="_method" value="POST">
         <div class="row">
