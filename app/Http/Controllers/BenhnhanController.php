@@ -19,7 +19,7 @@ class BenhnhanController extends Controller
 
     public function index(Request $request)
     {
-        $benhnhan = benhnhan::all();
+        $benhnhan = benhnhan::orderBy('created_at', 'desc')->get();
         return view('benhnhan.index', compact('benhnhan'));
     }
 

@@ -19,7 +19,7 @@ class NhansuController extends Controller
 
     public function index(Request $request)
     {
-        $nhansu = nhansu::all();
+        $nhansu = nhansu::orderBy('created_at', 'desc')->get();
         return view('nhansu.index', compact('nhansu'));
     }
 

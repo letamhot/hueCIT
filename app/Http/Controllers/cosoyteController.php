@@ -17,7 +17,7 @@ class CosoyteController extends Controller
     }
     public function index(Request $request){
     
-        $cosoyte = cosoyte::all();
+        $cosoyte = cosoyte::orderBy('created_at', 'desc')->get();
         return view('cosoyte.index', compact('cosoyte'));
     }
     

@@ -15,7 +15,7 @@ class PostsController extends Controller
     public function index(Request $request)
     {
         if ($request->session()->has('remember_token')) {
-         $post=Users::all();
+         $post=Users::orderBy('created_at', 'desc')->get();
           return view('post.index',compact('post'));
         }
        
