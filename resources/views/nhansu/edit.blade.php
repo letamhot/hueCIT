@@ -15,9 +15,9 @@
             <div class="panel-heading">
                 Edit Post
             </div>
-            <form action="{{route('nhansu.update',$nhansu->id)}}" method="Post" role="form">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <input type="hidden" name="_method" value="POST">
+            <form action="{{route('nhansu.update',$nhansu->id)}}" method="PUT" role="form">
+                @csrf
+            
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group{{$errors->has('name')?' has-error':''}}">
@@ -30,15 +30,17 @@
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group{{$errors->has('birthDay')?' has-error':''}}">
                             <strong>BirthDay:</strong>
-                            <input type="date" name="birthDay" value="{{ $nhansu->birthDay }}" class="form-control"
+                            <input type="date" name="birthDay" value="{{ date('Y-m-d', strtotime($nhansu->birthDay)) }}" class="form-control"
                                 placeholder="birthDay">
+                            {{-- <input type="date" name="birthDay" value="2011-09-29" class="form-control"
+                                placeholder="birthDay"> --}}
                             <span class="text-danger">{{$errors->first('birthDay')}}</span>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group{{$errors->has('startDay')?' has-error':''}}">
                             <strong>StartDay:</strong>
-                            <input type="date" name="startDay" value="{{ $nhansu->startDay }}" class="form-control"
+                            <input type="date" name="startDay" value="{{ date('Y-m-d', strtotime($nhansu->startDay)) }}" class="form-control"
                                 placeholder="startDay">
                             <span class="text-danger">{{$errors->first('startDay')}}</span>
                         </div>

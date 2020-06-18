@@ -64,6 +64,7 @@ class BenhnhanController extends Controller
         $benhnhan->id_giuong = $request->id_giuong;
         $benhnhan->id_csyt = $request->id_csyt;
         $benhnhan->save();
+        dump($benhnhan);
 
         return redirect()->route('benhnhan.index')->with('success', 'Benhnhan Created successfully');
     }
@@ -79,7 +80,7 @@ class BenhnhanController extends Controller
         return view('benhnhan.edit', compact('benhnhan', 'cosoyte', 'giuong'));
     }
 
-    public function update($id, Request $request)
+    public function update( Request $request, $id)
     {
 
         $this->validate($request, [
@@ -99,6 +100,7 @@ class BenhnhanController extends Controller
         $benhnhan->id_giuong = $request->id_giuong;
         $benhnhan->id_csyt = $request->id_csyt;
         $benhnhan->save();
+        dump($benhnhan);
         return redirect()->route('benhnhan.index')->with('success', 'Benhnhan updated successfully');
     }
 

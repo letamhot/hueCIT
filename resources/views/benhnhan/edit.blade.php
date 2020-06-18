@@ -3,18 +3,15 @@
 @section('content')
 <div class="row">
     <div class="col-lg-12 margin-tb" style="margin-top: 20px;">
-        <!--   <div class="pull-left">
-                <h2>Sửa tài khoản</h2>
-            </div> -->
         <div class="pull-right">
             <a href="{{route('benhnhan.index')}}" class="btn btn-primary">Back</a>
         </div>
     </div>
 </div>
 <br>
-<form action="{{route('benhnhan.update',$benhnhan->id)}}" method="POST" role="form">
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-    <input type="hidden" name="_method" value="POST">
+<form action="{{route('benhnhan.update',$benhnhan->id)}}" method="PUT" role="form">
+
+    @csrF
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group{{$errors->has('hoten')?' has-error':''}}">
@@ -41,15 +38,14 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group{{$errors->has('BirthDay')?' has-error':''}}">
                 <strong>BirthDay:</strong>
-                <input  type="date"  name="BirthDay" value="{{ $benhnhan->BirthDay }}" id="BirthDay" class="form-control">
-
+                <input  type="date"  name="BirthDay" value="{{ date('Y-m-d', strtotime($benhnhan->BirthDay)) }}" id="BirthDay" class="form-control">
                 <span class="text-danger">{{$errors->first('BirthDay')}}</span>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group{{$errors->has('StartDay')?' has-error':''}}">
                 <strong>StartDay:</strong>
-                <input type="date" name="StartDay" value="{{ $benhnhan->StartDay }}"  id="StartDay" class="form-control">
+                <input type="date" name="StartDay" value="{{ date('Y-m-d', strtotime($benhnhan->StartDay)) }}"  id="StartDay" class="form-control">
                 <span class="text-danger">{{$errors->first('StartDay')}}</span>
             </div>
         </div>
