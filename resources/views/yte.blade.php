@@ -225,6 +225,8 @@
                     tế</a></li>
 
             <hr>
+        
+            </li>
             <div class="sideProfile center">
 
                 <span>Xin chào:</span><br>
@@ -240,7 +242,6 @@
                     <a class="dropdown-item" href="{{url('logout')}}">Đăng xuất</a>
                 </div>
             </div>
-            </li>
 
         </ul>
     </div>

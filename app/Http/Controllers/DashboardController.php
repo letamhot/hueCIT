@@ -19,7 +19,7 @@ class DashboardController extends Controller
       else return view('admin.404');
        
    }
-   public function index1(Request $request){
+   public function yte(Request $request){
 
 
    	 if ($request->session()->has('remember_token')) {

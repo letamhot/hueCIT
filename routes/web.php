@@ -56,7 +56,8 @@ Route::post('signin', 'Auth\LoginController@doLogin');
 Route::get('logout', 'Auth\LoginController@logout');
 
 Route::get('dashboard', 'DashboardController@index'); 
-Route::get('yte', 'DashboardController@index1');
+Route::get('yte', 'DashboardController@yte');
+
 
 
 Route::get('/highchart/nhansu', 'ChartDataController@getNhanSu');
