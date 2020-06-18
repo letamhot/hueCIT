@@ -12,37 +12,37 @@ class ChartDataController extends Controller
         $item1 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('startDay', '<=', 2013)
+            ->whereYear('nhansu.startDay', '<=', 2013)
             ->groupBy("loainhansu.name")
             ->get();
         $item2 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('startDay', '<=', 2014)
+            ->whereYear('nhansu.startDay', '<=', 2014)
             ->groupBy("loainhansu.name")
             ->get();
         $item3 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('startDay', '<=', 2015)
+            ->whereYear('nhansu.startDay', '<=', 2015)
             ->groupBy("loainhansu.name")
             ->get();
         $item4 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('startDay', '<=', 2016)
+            ->whereYear('nhansu.startDay', '<=', 2016)
             ->groupBy("loainhansu.name")
             ->get();
         $item5 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('startDay', '<=', 2017)
+            ->whereYear('nhansu.startDay', '<=', 2017)
             ->groupBy("loainhansu.name")
             ->get();
         $item6 = DB::table('nhansu')
             ->join('loainhansu', 'loainhansu.id', '=', 'nhansu.id_LoaiNS')
             ->select(DB::raw("loainhansu.name, COUNT(*) as SoLuong"))
-            ->whereYear('startDay', '<=', 2018)
+            ->whereYear('nhansu.startDay', '<=', 2018)
             ->groupBy("loainhansu.name")
             ->get();
         return response()->json([$item1, $item2, $item3, $item4, $item5, $item6]);
@@ -50,33 +50,33 @@ class ChartDataController extends Controller
 
     public function getCoSoYTe()
     {
-        $item1 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
-            ->whereYear('NgayTL', '<=', 2010)
-            ->groupBy("loaiCS")
+        $item1 = DB::table('benhnhan')
+            ->join('cosoyte', 'cosoyte.id_csyt', '=', 'benhnhan.id_csyt')
+            ->select(DB::raw("cosoyte.name, COUNT(*) as SoLuong"))
+            ->whereYear('StartDay', '<=', 2014)
+            ->groupBy("cosoyte.name")
             ->get();
-        $item2 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
-            ->whereYear('NgayTL', '<=', 2012)
-            ->groupBy("loaiCS")
+        $item2 = DB::table('benhnhan')
+            ->join('cosoyte', 'cosoyte.id_csyt', '=', 'benhnhan.id_csyt')
+            ->select(DB::raw("cosoyte.name, COUNT(*) as SoLuong"))
+            ->whereYear('StartDay', '<=', 2016)
+            ->groupBy("cosoyte.name")
             ->get();
-        $item3 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
-            ->whereYear('NgayTL', '<=', 2014)
-            ->groupBy("loaiCS")
+        $item3 = DB::table('benhnhan')
+            ->join('cosoyte', 'cosoyte.id_csyt', '=', 'benhnhan.id_csyt')
+            ->select(DB::raw("cosoyte.name, COUNT(*) as SoLuong"))
+            ->whereYear('StartDay', '<=', 2018)
+            ->groupBy("cosoyte.name")
             ->get();
-        $item4 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
-            ->whereYear('NgayTL', '<=', 2016)
-            ->groupBy("loaiCS")
-            ->get();
-        $item5 = DB::table('cosoyte')
-            ->select(DB::raw("loaiCS, COUNT(*) as SoLuong"))
-            ->whereYear('NgayTL', '<=', 2018)
-            ->groupBy("loaiCS")
+        $item4 = DB::table('benhnhan')
+            ->join('cosoyte', 'cosoyte.id_csyt', '=', 'benhnhan.id_csyt')
+
+            ->select(DB::raw("cosoyte.name, COUNT(*) as SoLuong"))
+            ->whereYear('StartDay', '<=', 2020)
+            ->groupBy("cosoyte.name")
             ->get();
 
-        return response()->json([$item1, $item2, $item3, $item4, $item5]);
+        return response()->json([$item1, $item2, $item3, $item4]);
     }
     public function getBenhnhan()
     {

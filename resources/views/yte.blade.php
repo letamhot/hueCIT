@@ -478,17 +478,17 @@
                         var names = [];
                         data.forEach(item => {
                             item.forEach(i => {
-                                if (!names.includes(i.loaiCS))
-                                    names.push(i.loaiCS);
+                                if (!names.includes(i.name))
+                                    names.push(i.name);
                             });
                         });
                         var chartData = [];
-                        names.forEach(loaiCS => {
+                        names.forEach(name => {
                             var arr = [];
                             data.forEach(item => {
                                 var isHasValue = false;
                                 item.forEach(i => {
-                                    if (i.loaiCS === name) {
+                                    if (i.name === name) {
                                         arr.push(i.SoLuong);
                                         isHasValue = true;
                                     }
@@ -504,11 +504,10 @@
                         console.log(chartData);
 
                         var categories = [
-                            '2010',
-                            '2012',
                             '2014',
                             '2016',
                             '2018',
+                            '2020',
                         ];
                         Highcharts.chart('chart', {
                             chart: {
