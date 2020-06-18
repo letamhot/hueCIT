@@ -15,9 +15,9 @@
             <div class="panel-heading">
                 Edit Post
             </div>
-            <form action="{{route('nhansu.update',$nhansu->id)}}" method="PUT" role="form">
+            <form action="{{route('nhansu.update',$nhansu->id)}}" method="POST" role="form">
                 @csrf
-            
+                @method('PUT')
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group{{$errors->has('name')?' has-error':''}}">

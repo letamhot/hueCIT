@@ -64,7 +64,6 @@ class BenhnhanController extends Controller
         $benhnhan->id_giuong = $request->id_giuong;
         $benhnhan->id_csyt = $request->id_csyt;
         $benhnhan->save();
-        dump($benhnhan);
 
         return redirect()->route('benhnhan.index')->with('success', 'Benhnhan Created successfully');
     }
@@ -80,14 +79,18 @@ class BenhnhanController extends Controller
         return view('benhnhan.edit', compact('benhnhan', 'cosoyte', 'giuong'));
     }
 
-    public function update( Request $request, $id)
+    public function update(Request $request, $id)
     {
 
         $this->validate($request, [
             'hoten' => 'required',
             'diachi' => 'required',
             'SDT' => 'required',
+            'BirthDay' => 'required',
+            'StartDay' => 'required',
             'tenbenh' => 'required',
+            'id_giuong' => 'required',
+            'id_csyt' => 'required',
 
         ]);
         $benhnhan = benhnhan::findOrfail($id);
@@ -100,7 +103,6 @@ class BenhnhanController extends Controller
         $benhnhan->id_giuong = $request->id_giuong;
         $benhnhan->id_csyt = $request->id_csyt;
         $benhnhan->save();
-        dump($benhnhan);
         return redirect()->route('benhnhan.index')->with('success', 'Benhnhan updated successfully');
     }
 

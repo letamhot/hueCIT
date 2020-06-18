@@ -9,9 +9,9 @@
     </div>
 </div>
 <br>
-<form action="{{route('benhnhan.update',$benhnhan->id)}}" method="PUT" role="form">
-
-    @csrF
+<form action="{{route('benhnhan.update',$benhnhan->id)}}" method="POST" role="form">
+    @csrf
+    @method('PUT')
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group{{$errors->has('hoten')?' has-error':''}}">
@@ -93,14 +93,3 @@
     </div>
 </form>
 @endsection
-{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script>
-    $("input").on("change", function() {
-    this.setAttribute(
-        "data-date",
-        moment(this.value, "YYYY-MM-DD")
-        .format( this.getAttribute("data-date-format") )
-    )
-}).trigger("change")
-</script> --}}
