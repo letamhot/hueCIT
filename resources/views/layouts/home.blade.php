@@ -345,260 +345,266 @@
   <script src="{{ asset('js/accessibility.js') }}"></script>
   <div class="panel">
     <div class="highcharts">
-      <div class="charts-item" id="charts">
-        <script type="text/javascript">
-          $.ajax({
-            type: 'GET',
-            url: 'highchart/nhansu',
-            success: function(data) {
-              console.log(data)
-              var names = [];
-              data.forEach(item => {
-                item.forEach(i => {
-                  if (!names.includes(i.name))
-                    names.push(i.name);
-                });
-              });
-              var chartData = [];
-              names.forEach(name => {
-                var arr = [];
-                data.forEach(item => {
-                  var isHasValue = false;
-                  item.forEach(i => {
-                    if (i.name === name) {
-                      arr.push(i.SoLuong);
-                      isHasValue = true;
-                    }
-                  });
-                  if (!isHasValue) arr.push(0);
-                });
-                chartData.push({
-                  name,
-                  data: arr
-                });
-              });
-              console.log(names);
-              console.log(chartData);
-              var categories = [
-                '2013',
-                '2014',
-                '2015',
-                '2016',
-                '2017',
-                '2018'
-              ];
-              Highcharts.chart('charts', {
-                chart: {
-                  type: 'spline'
-                },
-                title: {
-                  text: 'Số lượng nhân sự cán bộ, bác sĩ, dược sĩ'
-                },
-                subtitle: {
-                  text: '(ĐV: người)'
-                },
-                xAxis: {
-                  categories,
-                  crosshair: true
-                },
-                yAxis: {
-                  min: 0,
-                  title: {
-                    text: 'Rainfall (mm)'
-                  }
-                },
-                tooltip: {
-                  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                  pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y:.1f} người</b></td></tr>',
-                  footerFormat: '</table>',
-                  shared: true,
-                  useHTML: true
-                },
-                plotOptions: {
-                  column: {
-                    pointPadding: 0.2,
-                    borderWidth: 0
-                  }
-                },
-                series: chartData
-              });
-            },
-            error: function(xhr) {
-              console.log(xhr.responseText);
-            }
-          });
-        </script>
-      </div>
-      <div class="charts-item" id="chart">
+        <div class="charts-item" id="charts">
+            <script type="text/javascript">
+            $.ajax({
+                type: 'GET',
+                url: 'highchart/nhansu',
+                success: function(data) {
+                    console.log(data)
+                    var names = [];
+                    data.forEach(item => {
+                        item.forEach(i => {
+                            if (!names.includes(i.name))
+                                names.push(i.name);
+                        });
+                    });
+                    var chartData = [];
+                    names.forEach(name => {
+                        var arr = [];
+                        data.forEach(item => {
+                            var isHasValue = false;
+                            item.forEach(i => {
+                                if (i.name === name) {
+                                    arr.push(i.SoLuong);
+                                    isHasValue = true;
+                                }
+                            });
+                            if (!isHasValue) arr.push(0);
+                        });
+                        chartData.push({
+                            name,
+                            data: arr
+                        });
+                    });
+                    console.log(names);
+                    console.log(chartData);
 
-        <script type="text/javascript">
-          $.ajax({
-            type: 'GET',
-            url: 'highchart/cosoyte',
-            success: function(data) {
-              console.log(data)
-              var names = [];
-              data.forEach(item => {
-                item.forEach(i => {
-                  if (!names.includes(i.loaiCS))
-                    names.push(i.loaiCS);
-                });
-              });
-              var chartData = [];
-              names.forEach(name => {
-                var arr = [];
-                data.forEach(item => {
-                  var isHasValue = false;
-                  item.forEach(i => {
-                    if (i.loaiCS === name) {
-                      arr.push(i.SoLuong);
-                      isHasValue = true;
-                    }
-                  });
-                  if (!isHasValue) arr.push(0);
-                });
-                chartData.push({
-                  name,
-                  data: arr
-                });
-              });
-              console.log(names);
-              console.log(chartData);
-              var categories = [
-                '2010',
-                '2012',
-                '2014',
-                '2016',
-                '2018',
-              ];
-              Highcharts.chart('chart', {
-                chart: {
-                  type: 'bar'
+                    var categories = [
+                        '2013',
+                        '2014',
+                        '2015',
+                        '2016',
+                        '2017',
+                        '2018'
+                    ];
+                    Highcharts.chart('charts', {
+                        chart: {
+                            type: 'spline'
+                        },
+                        title: {
+                            text: 'Số lượng nhân sự cán bộ, bác sĩ, dược sĩ'
+                        },
+                        subtitle: {
+                            text: '(ĐV: người)'
+                        },
+                        xAxis: {
+                            categories,
+                            crosshair: true
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Rainfall (mm)'
+                            }
+                        },
+                        tooltip: {
+                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                '<td style="padding:0"><b>{point.y:.1f} người</b></td></tr>',
+                            footerFormat: '</table>',
+                            shared: true,
+                            useHTML: true
+                        },
+                        plotOptions: {
+                            column: {
+                                pointPadding: 0.2,
+                                borderWidth: 0
+                            }
+                        },
+                        series: chartData
+                    });
                 },
-                title: {
-                  text: 'Số lượng cơ sở y tế'
+                error: function(xhr) {
+                    console.log(xhr.responseText);
+                }
+            });
+            </script>
+        </div>
+        <div class="charts-item" id="chart">
+
+            <script type="text/javascript">
+            $.ajax({
+                type: 'GET',
+                url: 'highchart/cosoyte',
+                success: function(data) {
+                    console.log(data)
+                    var names = [];
+                    data.forEach(item => {
+                        item.forEach(i => {
+                            if (!names.includes(i.name))
+                                names.push(i.name);
+                        });
+                    });
+                    var chartData = [];
+                    names.forEach(name => {
+                        var arr = [];
+                        data.forEach(item => {
+                            var isHasValue = false;
+                            item.forEach(i => {
+                                if (i.name === name) {
+                                    arr.push(i.SoLuong);
+                                    isHasValue = true;
+                                }
+                            });
+                            if (!isHasValue) arr.push(0);
+                        });
+                        chartData.push({
+                            name,
+                            data: arr
+                        });
+                    });
+                    console.log(names);
+                    console.log(chartData);
+
+                    var categories = [
+                        '2014',
+                        '2016',
+                        '2018',
+                        '2020',
+                    ];
+                    Highcharts.chart('chart', {
+                        chart: {
+                            type: 'bar'
+                        },
+                        title: {
+                            text: 'Số lượng cơ sở y tế'
+                        },
+                        subtitle: {
+                            text: '(ĐV: Cơ sở)'
+                        },
+
+                        xAxis: {
+                            categories,
+                            crosshair: true
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Rainfall (mm)'
+                            }
+                        },
+
+                        tooltip: {
+                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                '<td style="padding:0"><b>{point.y:.1f} cơ sở</b></td></tr>',
+                            footerFormat: '</table>',
+                            shared: true,
+                            useHTML: true
+                        },
+                        plotOptions: {
+                            column: {
+                                pointPadding: 0.2,
+                                borderWidth: 0
+                            }
+                        },
+                        series: chartData
+                    });
                 },
-                subtitle: {
-                  text: '(ĐV: Cơ sở)'
+                error: function(xhr) {
+                    console.log(xhr.responseText);
+                }
+            });
+            </script>
+        </div>
+        <div class="charts-item" id="highchart">
+
+
+            <script type="text/javascript">
+            $.ajax({
+                type: 'GET',
+                url: 'highchart/benhnhan',
+                success: function(data) {
+                    console.log(data);
+                    var names = [];
+                    data.forEach(item => {
+                        item.forEach(i => {
+                            if (!names.includes(i.name))
+                                names.push(i.name);
+                        });
+                    });
+                    var chartData = [];
+                    names.forEach(name => {
+                        var arr = [];
+                        data.forEach(item => {
+                            var isHasValue = false;
+                            item.forEach(i => {
+                                if (i.name === name) {
+                                    arr.push(i.SoLuong);
+                                    isHasValue = true;
+                                }
+                            });
+                            if (!isHasValue) arr.push(0);
+                        });
+                        chartData.push({
+                            name,
+                            data: arr
+                        });
+                    });
+                    console.log(names);
+                    console.log(chartData);
+
+                    var categories = [
+                        '2016',
+                        '2017',
+                        '2018'
+                    ];
+                    Highcharts.chart('highchart', {
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: 'Số lượng Bệnh Nhân , Giường Bệnh'
+                        },
+                        subtitle: {
+                            text: '(ĐV: người)'
+                        },
+                        xAxis: {
+                            categories,
+                            crosshair: true
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Rainfall (mm)'
+                            }
+                        },
+                        tooltip: {
+                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                '<td style="padding:0"><b>{point.y:.1f} người</b></td></tr>',
+                            footerFormat: '</table>',
+                            shared: true,
+                            useHTML: true
+                        },
+                        plotOptions: {
+                            column: {
+                                pointPadding: 0.2,
+                                borderWidth: 0
+                            }
+                        },
+                        series: chartData
+                    });
                 },
-                xAxis: {
-                  categories,
-                  crosshair: true
-                },
-                yAxis: {
-                  min: 0,
-                  title: {
-                    text: 'Rainfall (mm)'
-                  }
-                },
-                tooltip: {
-                  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                  pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y:.1f} cơ sở</b></td></tr>',
-                  footerFormat: '</table>',
-                  shared: true,
-                  useHTML: true
-                },
-                plotOptions: {
-                  column: {
-                    pointPadding: 0.2,
-                    borderWidth: 0
-                  }
-                },
-                series: chartData
-              });
-            },
-            error: function(xhr) {
-              console.log(xhr.responseText);
-            }
-          });
-        </script>
-      </div>
-      <div class="charts-item" id="highchart">
-        <script type="text/javascript">
-          $.ajax({
-            type: 'GET',
-            url: 'highchart/benhnhan',
-            success: function(data) {
-              console.log(data);
-              var names = [];
-              data.forEach(item => {
-                item.forEach(i => {
-                  if (!names.includes(i.name))
-                    names.push(i.name);
-                });
-              });
-              var chartData = [];
-              names.forEach(name => {
-                var arr = [];
-                data.forEach(item => {
-                  var isHasValue = false;
-                  item.forEach(i => {
-                    if (i.name === name) {
-                      arr.push(i.SoLuong);
-                      isHasValue = true;
-                    }
-                  });
-                  if (!isHasValue) arr.push(0);
-                });
-                chartData.push({
-                  name,
-                  data: arr
-                });
-              });
-              console.log(names);
-              console.log(chartData);
-              var categories = [
-                '2016',
-                '2017',
-                '2018'
-              ];
-              Highcharts.chart('highchart', {
-                chart: {
-                  type: 'column'
-                },
-                title: {
-                  text: 'Số lượng Bệnh Nhân , Giường Bệnh'
-                },
-                subtitle: {
-                  text: '(ĐV: người)'
-                },
-                xAxis: {
-                  categories,
-                  crosshair: true
-                },
-                yAxis: {
-                  min: 0,
-                  title: {
-                    text: 'Rainfall (mm)'
-                  }
-                },
-                tooltip: {
-                  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                  pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                    '<td style="padding:0"><b>{point.y:.1f} người</b></td></tr>',
-                  footerFormat: '</table>',
-                  shared: true,
-                  useHTML: true
-                },
-                plotOptions: {
-                  column: {
-                    pointPadding: 0.2,
-                    borderWidth: 0
-                  }
-                },
-                series: chartData
-              });
-            },
-            error: function(xhr) {
-              console.log(xhr.responseText);
-            }
-          });
-        </script>
-      </div>
+                error: function(xhr) {
+                    console.log(xhr.responseText);
+                }
+            });
+            </script>
+        </div>
     </div>
-  </div>
+</div>
   <br>
   <br>
   <hr>
